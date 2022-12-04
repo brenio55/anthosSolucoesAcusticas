@@ -1,0 +1,10 @@
+Projeto -> Anamnese, com visita ao local, com medições acústicas com aparelhos específicos e calibrados, tudo de acordo com as normas brasileiras e internacionais. Será gerado um estudo e toda uma base de calculo com relação às normas. Todos estes estudos serão implementados nas plantas baixas, num projeto de arquitetura. Tanto de isolamento quanto de conforto ambiental e acústico. De acordo com as maiores e melhores práticas de conceitos acústicos.
+
+
+Consultoria -> Irá o cliente enviar fotos do local/características e o que o cliente deseja. Será feita uma análise técnica, e serão indicados dentro das normas e conceitos o que se deve fazer de acordo com o enviado. O contratante que será responsável pelo envio das características. Será um trabalho mais descrito, de acordo do que será enviado pelo cliente. Quanto mais informações assertivas, mais certo o projeto ficará. Não é enviado fotos neste serviço, apenas um serviço descritivo sobre o que deve ser feito, ou chegar o mais próximo do desejado do cliente. 
+
+Assessoria -> Cliente fala suas pretensões, é explicado conceitos acústicos e explicada as normas, e então o cliente fará, de acordo com os conceitos técnicos explicados pelo arquiteto acústico, o projeto. É mais ou menos uma aula.
+
+
+Laudo Acústico -> Atestação de trabalho já existente
+

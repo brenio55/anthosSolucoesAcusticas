@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anthos</title>
+
+    <!-- Google Fonts Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Fonts Imports -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+    crossorigin="anonymous"></script>
+
+    <script src="scroll.js"></script>
+    <script src="send.js"></script>
+</head>
+<body> <!-- verificar possibilidade de fazer linhas com pseudoclasse no body-->
+    <span class="linha LdireitaTop"></span>
+    <span class="linha LesquerdaTop"></span>
+
+    <header>
+        <div class="logo">
+          <section class="flex center column">
+            <img alt="logo da anthos" srcset="">
+            <h2>anthos</h2>
+            <h6>acústica</h6>
+          </section>
+        </div>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>SERVIÇOS</li>
+                <li>CONTATO</li>
+                <li>SOBRE</li>
+            </ul>
+        </nav>
+    </header> <!-- fazer linhas esquerda e direta com pseudoclasse-->
+    <main>
+        <section class="front-page"> <!-- FRONT PAGE -->
+            <img class="grafismo CoralFino frontPage" alt="Coral Fino Grafismo de decoração">
+            <section class="flex spaceEvenly">
+                <article class="esquerdo">
+                    <h2 class="branding1">O melhor em</h2>
+                    <h1 class="branding2">SOLUÇÕES ACÚSTICAS</h1>
+
+                    <button class="DiamondArrow">Clique para conhecer</button>
+                    <div class="redesSociais">
+                        <img src="" alt="logo do instagram" class="instagram">
+                        <img src="" alt="logo do whatsapp" class="whatsapp">
+                    </div>
+                </article>
+
+                <article class="direito">
+                    <img src="" alt="imagem de banner / foto de estúdio" class="bannerImage">
+                </article>
+            </section>
+        </section>
+        <section class="services"> <!-- SERVIÇOS -->
+            <img class="grafismo CoralFino Inverso esquerdo" alt="Coral Fino Grafismo de decoração">
+            <img class="grafismo CoralGrosso direito" alt="Coral Grosso Grafismo de decoração">
+
+            <img class="grafismo CoralFino direito" alt="Coral Fino Grafismo de decoração">
+            <img class="grafismo CoralGrosso Inverso esquerdo" alt="Coral Grosso Grafismo de decoração">
+
+            <div class="secName">
+                <h2 class="secTitle">Serviços</h2>
+                <img alt="coral pequeno" class="secSymbol">
+            </div>
+
+                <section class="grupo1 flex spaceEvenly"> <!-- SERVIÇOS GP 1-->               
+                    <article class="quadrado"> <!-- Projeto -->
+                        <img alt="arquiteto desenhando projeto" class="imgBackground projetoImg">
+                        <h3 class="titulo">Projeto</h3> 
+                        <h4 class="descricao">Anamnese, com visita presencial ao local. Medição 
+                            com aparelhos especificos, de acordo com as normas 
+                            nacionais e internacionais existentes. É então 
+                            entregue um projeto arquitetônico de acordo com os 
+                            melhores conceitos e práticas acústicas.</h4>
+                        <button class="DiamondArrowWhite">Veja mais</button> <!-- Ver possibilidade de colocar imagem com pseudoclasse-->
+                    </article>
+                    <article class="quadrado"> <!-- Consultoria -->
+                        <img alt="celular e café em cima da mesa" class="imgBackground consultoriaImg">
+                        <h3 class="titulo">Consultoria</h3>
+                        <h4 class="descricao">O cliente envia fotos do local e/ou caracteristicas 
+                            para o arquiteto. É feita uma análise técnica, onde o 
+                            arquiteto irá indicar o que se deve ser feito (por 
+                            escrito) para que se tenhao resultado desejado pelo 
+                            cliente. Este serviço não inclui um projeto</h4>
+                        <button class="DiamondArrowWhite">Veja mais</button> <!-- Ver possibilidade de colocar imagem com pseudoclasse-->
+                    </article>
+                </section>
+            
+                <section class="grupo2 flex spaceEvenly"> <!-- SERVIÇOS GP 2-->
+                    <article class="quadrado"> <!-- Assessoria -->
+                        <img alt="duas pessoas conversando" class="imgBackground assessoriaImg">
+                        <h3 class="titulo">Assessoria</h3>
+                        <h4 class="descricao">Na assessoria, o cliente tem uma conversa profunda com o arquiteto almejando o aprendizado de técnicas 
+                            arquitetônicas e acústicas, para que ele, por conta 
+                            própria, execute, com base no aprendizado, o resultado que ele deseja. Não inclui um projeto</h4>
+                        <button class="DiamondArrowWhite">Veja mais</button> <!-- Ver possibilidade de colocar imagem com pseudoclasse-->
+                    </article>
+                    <article class="quadrado laudoAcustico"> <!-- Laudo Acústico -->
+                        <img alt="mão em papel escrevendo laudo" class="imgBackground laudoAcusticoImg">
+                        <h3 class="titulo">Laudo Acústico</h3>
+                        <h4 class="descricao">É feito um laudo para atestação de um trabalho de 
+                            solução acústica em local determinado pelo cliente. É feito o uso de equipamentos acústicos de medição e 
+                            precisão, com base nas normas internacionais e 
+                            nacionais</h4>
+                        <button class="DiamondArrowWhite">Veja mais</button> <!-- Ver possibilidade de colocar imagem com pseudoclasse-->
+                    </article>
+                </section>
+        </section>
+        <section class="contact"> <!-- CONTATO -->
+            <img class="grafismo CoralFino Verde Preenchido Inverso esquerdo" alt="Coral Fino Grafismo de decoração">
+            <img class="grafismo CoralGrosso Verde direito" alt="Coral Grosso Grafismo de decoração">
+
+            <div class="secName">
+                <h2 class="secTitle">Contato</h2>
+                <img src="" alt="coral pequeno verde" class="secSymbol verde">
+            </div>        
+
+            <section class="flex spaceBetween">
+                <section class="grupo1">
+                    <img src="" alt="homem mexendo em celular com um café na outra mão" class="contactImg">
+                    <div class="redesSociais">
+                        <img src="" alt="logo do instagram" class="instagram">
+                        <img src="" alt="logo do whatsapp" class="whatsapp">
+                    </div>
+                </section>
+                <section class="grupo2">
+                    <h2 class="entreEmContato">Entre em contato conosco</h2>
+
+                    <form action="javascript:msg();">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+
+                        <label for="msg">Mensagem</label>
+                        <textarea name="msg" id="" cols="30" rows="18"></textarea>
+
+                        <button class="DiamondArrowWhite contact" type="submit">Enviar</button> <!-- imagem com pseudoclasse -->
+                    </form>
+                </section>
+            </section>
+        </section>
+
+        <section class="aboutUs"> <!-- SOBRE NÓS -->
+            <div class="secName">
+                <h2 class="secTitle">Sobre Nós</h2>
+                <img src="" alt="grafismo coral grosso" class="secSymbol aboutUs">
+            </div>   
+
+            <section class="informacoesGerais">
+                <section class="flex center aboutUsParte1">
+                    <div class="info">
+                        <img src="" alt="imagem do franki, dono da anthos" class="franki">
+                        <div class="infoTexts">
+                            <h4 class="frankiNome">Franki Silveira Regianini</h4>
+                            <h5 class="funcao">Arquiteto acústico</h5>
+                            <p>Fundador - Niterói, RN | Brazil</p>
+
+                            <h5>Conselho de Arquitetura e Urbanismo (CAU):</h5>
+                            <p>A 94826-8 RJ</p>
+
+                            <h5>CNPJ:</h5>
+                            <p>36.853.226/0001-82</p>
+
+                            <p class="descricao1">“Meu nome é Franki S. Regianini. Sou arquiteto 
+                                urbanista, especializado em conforto ambiental, com 
+                                ênfase em acústica arquitetônica. Comecei 
+                                trabalhando na empresa de minha família, a Stimex 
+                                Cia Brasileira de Acústica em 1989, quando tive os 
+                                primeiros contatos com a acústica arquitetônica, 
+                                ligado primeiramente em adequação de espaços 
+                                internos para reverberação ideal dos ambientes, 
+                                sendo nós, os primeiros representantes brasileiros do 
+                                Sonex, material absorvente mundialmente conhecido, 
+                                fabricado pela empresa Alemã ILLbruck, detentora 
+                                da marca.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex spaceBetween aboutUsParte2">
+                    <div class="flex center">
+                        <img src="" alt="">
+                        <p>"Logo depois, começamos a distribuir os isolamentos 
+                            de vibração da GERB, outra empresa alemã com 
+                            mais de 100 anos de experiencia nessa área. Fui me 
+                            aprofundando na área, estudando acústica, 
+                            principalmente a parte de reverberação e isolamento 
+                            acústico, participando de seminários, cursos na 
+                            SOBRAC (Sociedade Brasileira de Acústica) e os 
+                            ministrados pelas empresas nas quais 
+                            representávamos."</p>
+                    </div>
+                    <div class="flex center">
+                        <img src="" alt="">
+                        <p>"Depois comecei a me aperfeiçoar, juntamente com a 
+                            acústica física de uma nova e revolucionária 
+                            abordagem da acústica: a psicoacústica, que estuda a 
+                            relação do ruído com o ser humano e a relação do 
+                            ser humano com o ruído e como ele afeta direta e 
+                            indiretamente o indivíduo"</p>
+                    </div>
+                </section>
+                <section class="flex center aboutUsParte3">
+                    <img src="" alt="">
+                    <p><a href="#">Veja aqui</a> as normas que 
+                        utilizamos para executar nossos 
+                        serviços de medição, e alguns 
+                        livros estudados pela nossa 
+                        equipe</p>
+                </section>
+        </section>  
+        </section>
+    </main>
+    <footer>
+        <section class="flex spaceBetween">
+            <div class="logo">
+                <img src="" alt="logo da anthos" srcset="">
+                <h2>anthos</h2>
+                <h4>acústica</h4>
+            </div>
+
+            <div class="redesSociais">
+                <h4>Redes Sociais da Anthos</h4>
+                <section class="flex spaceBetween">
+                    <img src="" alt="logo do instagram" class="instagram">
+                    <img src="" alt="logo do whatsapp" class="whatsapp">
+                </section>
+            </div>
+
+            <ul>
+                <li>HOME</li>
+                <li>SERVIÇOS</li>
+                <li>CONTATO</li>
+                <li>SOBRE</li>
+            </ul>
+        </section>
+    </footer> <!-- fazer linhas laterais com pseudoclasse-->
+
+    <span class="linha LdireitaBot"></span>
+    <span class="linha LesquerdaBot"></span>
+</body>
+</html>

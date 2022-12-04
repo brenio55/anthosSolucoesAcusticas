@@ -1,0 +1,501 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bosque";
+  src: url("../css/fonts/BOSQUE.woff") format("opentype");
+}
+/******************************************** GENERAL STANDARD STYLES /********************************************/
+* {
+  transition: all 0.2s;
+}
+
+::-webkit-scrollbar {
+  background: #615753;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f9cbb8;
+  border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: unset;
+}
+
+html, body {
+  background-color: #473e3b;
+  margin: 0;
+  padding: 0;
+  color: #F8DAD0;
+  font-family: "Bosque";
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  padding-inline: 15px;
+}
+
+.linha {
+  display: block;
+  position: fixed;
+  height: 135px;
+  width: 1px;
+  background: white;
+  z-index: 2;
+}
+
+.linha-menor {
+  height: 94px;
+}
+
+.LesquerdaTop {
+  right: 13%;
+  top: 0;
+}
+
+.LdireitaTop {
+  left: 13%;
+  top: 0;
+}
+
+section .flex {
+  display: flex;
+}
+section .flex.center {
+  justify-content: center;
+}
+section .flex.spaceEvenly {
+  justify-content: space-evenly;
+}
+section .flex.spaceBetween {
+  justify-content: space-between;
+}
+section .flex.column {
+  flex-direction: column;
+}
+
+button {
+  min-width: 150px;
+  display: block;
+  padding: 10px 95px 10px 15px;
+  border-radius: 2.5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+button.DiamondArrow::after, button.DiamondArrowWhite::after {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 10px;
+  z-index: 0;
+}
+button.DiamondArrow::after {
+  content: url("../img/general/buttons/diamondArrow.png");
+}
+button.DiamondArrowWhite::after {
+  content: url("../img/general/buttons/diamondArrowWhite.png");
+}
+button.DiamondArrowWhite.contact::after {
+  content: url("../img/general/buttons/diamondArrowWhite.png");
+  margin-left: 43px;
+}
+
+.redesSociais {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.redesSociais .instagram {
+  content: url("../img/general/socialMedia/instawhite.png");
+  max-width: 40px;
+}
+.redesSociais .whatsapp {
+  content: url("../img/general/socialMedia/whatswhite.png");
+  max-width: 40px;
+}
+
+img.grafismo {
+  position: absolute;
+}
+img.grafismo.CoralFino {
+  width: 80px;
+  height: 80px;
+  z-index: 0;
+  content: url("../img/general/grafismos/galhoAbertoSemFundo.png");
+}
+img.grafismo.CoralFino.frontPage {
+  transform: rotate(-14deg);
+  margin-top: 31%;
+  margin-left: 8%;
+}
+@media screen and (width: 1920px) {
+  img.grafismo.CoralFino.frontPage {
+    margin-top: 21%;
+    margin-left: 16%;
+  }
+}
+img.grafismo.CoralFino.Inverso {
+  content: url("../img/general/grafismos/galhoAbertoSemFundoInverso.png");
+}
+img.grafismo.CoralFino.esquerdo {
+  left: 0;
+}
+img.grafismo.CoralFino.direito {
+  right: 0;
+}
+img.grafismo.CoralFino.Preenchido.Verde {
+  content: url("../img/general/grafismos/coralPequenoVerdePreenchido.png");
+}
+img.grafismo.CoralFino.Preenchido.Verde.Inverso {
+  content: url("../img/general/grafismos/coralPequenoVerdePreenchidoInverso.png");
+}
+img.grafismo.CoralGrosso {
+  width: 80px;
+  height: 80px;
+  z-index: 0;
+  content: url("../img/general/grafismos/coralFechadoFundo.png");
+}
+img.grafismo.CoralGrosso.Inverso {
+  content: url("../img/general/grafismos/CoralFechadoFundoInverso.png");
+}
+img.grafismo.CoralGrosso.esquerdo {
+  left: 0;
+}
+img.grafismo.CoralGrosso.direito {
+  right: 0;
+}
+img.grafismo.CoralGrosso.Verde {
+  content: url("../img/general/grafismos/coralFechadoVerde.png");
+}
+
+div.secName {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+div.secName h2 {
+  font-size: 64px;
+  color: #f9cbb8;
+  margin-bottom: 0;
+}
+div.secName .secSymbol {
+  content: url("../img/general/grafismos/coralPequeno.png");
+  width: 51px;
+  height: 51px;
+}
+div.secName .secSymbol.escuro {
+  content: url("../img/general/grafismos/coralPequenoPreto.png");
+}
+div.secName .secSymbol.verde {
+  content: url("../img/general/grafismos/coralPequenoVerdeInverso.png");
+}
+div.secName .secSymbol.aboutUs {
+  content: url("../img/general/aboutUs/grafismoContato.png");
+  width: 143px;
+  height: 75px;
+  transform: scale(0.8);
+}
+
+/******************************************** END GENERAL STANDARD STYLES /********************************************/
+/******************************************** HEADER /********************************************/
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: #093641;
+  min-height: 180px;
+  /******************************************** NAV /********************************************/
+}
+header .logo {
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+header .logo section > * {
+  margin: 0px;
+}
+header .logo img {
+  padding-top: 27px;
+  content: url("../img/general/header/logo.png");
+  max-width: 105px;
+}
+header .logo h2 {
+  font-size: 40px;
+}
+header .logo h6 {
+  margin-top: -5px;
+  letter-spacing: 6px;
+}
+header nav {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  background-color: #0e7989;
+  border-bottom: 1px solid #F8DAD0;
+}
+header nav::before, header nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  margin-top: 25px;
+  height: 1px;
+  width: 70px;
+}
+header nav::before {
+  left: 0;
+}
+header nav::after {
+  right: 0;
+}
+header nav ul li {
+  display: inline-block;
+}
+header.header-menor {
+  min-height: 100px;
+}
+header.header-menor .logo section {
+  transform: scale(0.7);
+  height: 135px;
+}
+header.header-menor .logo img {
+  max-width: 105px;
+  padding-top: 0;
+}
+header.header-menor nav {
+  margin-top: 0;
+}
+
+main {
+  padding-top: 180px;
+}
+main section.front-page { /******************************************** FRONT - PAGE /********************************************/
+  font-family: "Alegreya Sans", sans-serif;
+  margin-top: 0;
+  background-color: #ed6e64;
+  background-image: url("../img/general/frontPage/Pattern.png");
+  background-size: 100%;
+  min-height: 636px;
+}
+main section.front-page section {
+  min-height: 636px;
+  align-items: center;
+}
+main section.front-page .esquerdo,
+main section.front-page .direito {
+  min-width: 572px;
+}
+main section.front-page .direito {
+  min-width: 630px;
+}
+main section.front-page .esquerdo h1, main section.front-page .esquerdo h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+main section.front-page .esquerdo h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-left: -180px;
+  font-weight: 1 500;
+}
+main section.front-page .esquerdo h1 {
+  display: block;
+  font-size: 85px;
+  width: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 1px;
+  margin-top: -18px;
+  line-height: 1em;
+}
+main section.front-page .esquerdo button {
+  margin-top: 10px;
+  margin-bottom: 65px;
+}
+main section.front-page .direito .bannerImage {
+  content: url("../img/general/frontPage/studio.jpg");
+  max-width: 633px;
+  border-radius: 19px;
+  margin-right: 34px;
+}
+main section.services { /******************************************** SERVIÇOS /********************************************/
+  box-sizing: border-box;
+}
+main section.services .quadrado {
+  width: 350px;
+  height: 465px;
+  border-radius: 7.64px;
+  background-color: #E9664A;
+  box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
+}
+main section.services .quadrado img {
+  width: 350px;
+  height: 225px;
+  border-top-left-radius: 7.64px;
+  border-top-right-radius: 7.64px;
+}
+main section.services .quadrado img.projetoImg {
+  content: url("../img/general/services/projeto/projeto.jpg");
+}
+main section.services .quadrado img.consultoriaImg {
+  content: url("../img/general/services/consultoria/consultoria.jpg");
+}
+main section.services .quadrado img.assessoriaImg {
+  content: url("../img/general/services/assessoria/assessoriaProportional.png");
+}
+main section.services .quadrado img.laudoAcusticoImg {
+  content: url("../img/general/services/laudo/laudo.jpg");
+}
+main section.services .quadrado h3, main section.services .quadrado h4, main section.services .quadrado button {
+  color: #F8DAD0;
+}
+main section.services .quadrado h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 7px;
+  margin-bottom: 22px;
+}
+main section.services .quadrado h4 {
+  margin-top: 0;
+  text-align: justify;
+  font-family: "Alegreya Sans", sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main section.services .quadrado button {
+  background-color: #302826;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #f9cbb8;
+}
+main section.services .grupo1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+main section.services .laudoAcustico button {
+  margin-top: -8px;
+}
+main section.services .CoralFino.esquerdo {
+  left: -56px;
+  width: 170px;
+  height: 170px;
+  margin-top: 295px;
+  transform: rotate(14deg);
+}
+main section.services .CoralFino.direito {
+  width: 170px;
+  height: 170px;
+  margin-top: 1015px;
+  right: -50px;
+}
+main section.services .CoralGrosso.esquerdo {
+  width: 240px;
+  height: 240px;
+  margin-top: 803px;
+}
+main section.services .CoralGrosso.direito {
+  width: 190px;
+  height: 190px;
+  margin-top: 505px;
+}
+main section.contact { /******************************************** CONTATO /********************************************/
+  background-color: rgba(249, 203, 184, 0.68);
+  margin-top: 53.12px;
+  padding-bottom: 95px;
+  font-family: "BOSQUE";
+}
+main section.contact .CoralGrosso {
+  margin-top: 495px;
+  width: 190px;
+  height: 190px;
+}
+main section.contact .CoralFino {
+  margin-top: 325px;
+  left: -18px;
+  transform: rotate(10deg);
+}
+main section.contact .flex {
+  margin-top: 50px;
+  margin-left: 140px;
+  margin-right: 180px;
+}
+@media screen and (width: 1920px) {
+  main section.contact .flex {
+    margin-left: 260px;
+    margin-right: 290px;
+  }
+}
+main section.contact .flex img.contactImg {
+  content: url("../img/general/contact/coffe.png");
+  max-width: 410px;
+  max-height: 415px;
+  border-radius: 20px;
+  margin-top: 58px;
+}
+main section.contact .flex .grupo1 .redesSociais {
+  margin-top: 36px;
+}
+main section.contact .flex .grupo2 {
+  width: 435px;
+}
+@media screen and (width: 1920px) {
+  main section.contact .flex .grupo2 {
+    width: 620px;
+  }
+}
+main section.contact .flex .grupo2 .entreEmContato {
+  font-weight: 600;
+  text-align: center;
+  margin-top: -12px;
+  margin-bottom: 38px;
+}
+main section.contact .flex .grupo2 button {
+  width: 250px;
+  background-color: #164850;
+  color: #F8DAD0;
+}
+main section.contact h2, main section.contact h3, main section.contact p, main section.contact label, main section.contact textarea {
+  color: #164850;
+}
+main section.contact label {
+  font-size: 23px;
+}
+main section.contact form * {
+  display: block;
+  width: 100%;
+}
+main section.contact form input, main section.contact form textarea {
+  border: 1px solid white;
+  border-radius: 3px;
+  background: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
+}
+main section.contact form input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
+}
+main section.contact form textarea {
+  margin-bottom: 45px;
+}
+main section.contact form #nome {
+  margin-bottom: 15px;
+}

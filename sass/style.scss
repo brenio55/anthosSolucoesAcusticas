@@ -1,0 +1,634 @@
+@font-face {
+    font-family: 'Bosque';
+    src: url('../css/fonts/BOSQUE.woff') format('opentype');
+}
+
+$mainBackgroundColor: #473e3b;
+
+$mainColor: #093641;
+$mainColorBrighter: #164850;
+$navColor: #0e7989;
+$mainTextColor: #F8DAD0;
+$rosa: #ed6e64;
+$laranja: #E9664A;
+$marrom: #302826;
+$verdeSobreNos: #09323E;
+
+$TitleColorStandard: #f9cbb8;
+$ContactColorStandard: $TitleColorStandard;
+$ContactTextColor: $mainColorBrighter;
+
+
+
+/******************************************** GENERAL STANDARD STYLES /********************************************/
+
+* {
+    transition: all 0.2s;
+}
+
+@mixin sombra{
+    box-shadow: rgb(0,0,0, 0.09) 3px 4px;
+}
+
+::-webkit-scrollbar{
+    background: #615753;
+    width: 4px;
+  }
+  
+::-webkit-scrollbar-thumb{
+    background-color: #f9cbb8;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: unset;
+}
+
+html, body{
+    background-color: $mainBackgroundColor;
+    margin: 0;
+    padding: 0;
+    color: $mainTextColor;
+    font-family: 'Bosque';
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-position: inside;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    padding-inline: 15px;
+}
+
+.linha{
+    display: block;
+    position: fixed;
+    height: 135px;
+    width: 1px;
+    background: white;
+    z-index: 2;
+}
+
+.linha-menor{
+    height: 94px;
+}
+
+$valueLRLinha: 13%;
+
+.LesquerdaTop{
+    right: $valueLRLinha;
+    top: 0;
+}
+
+.LdireitaTop{
+    left: $valueLRLinha;
+    top: 0;
+}
+
+section .flex{
+    display: flex;
+
+    &.center{
+        justify-content: center;
+    }
+
+    &.spaceEvenly{
+        justify-content: space-evenly;
+    }
+
+    &.spaceBetween{
+        justify-content: space-between;
+    }
+
+    &.column{
+        flex-direction: column;
+    }
+}
+
+button{
+    min-width: 150px;
+    $topBottom: 10px;
+    display: block;
+    padding: $topBottom 95px $topBottom 15px;
+    border-radius: 2.5px;
+    border: none;
+    @include sombra();
+    margin-left: auto;
+    margin-right: auto;
+
+    &.DiamondArrow::after, &.DiamondArrowWhite::after{
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 10px;
+        z-index: 0;
+    } 
+    
+    &.DiamondArrow::after{
+        content: url('../img/general/buttons/diamondArrow.png');
+    }
+    &.DiamondArrowWhite::after{
+        content: url('../img/general/buttons/diamondArrowWhite.png');
+    }
+    &.DiamondArrowWhite.contact::after{
+        content: url('../img/general/buttons/diamondArrowWhite.png');
+        margin-left: 43px;
+    }
+} 
+.redesSociais{
+    $maxWidth: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .instagram{
+        content: url('../img/general/socialMedia/instawhite.png');
+        max-width: $maxWidth;
+    }
+    .whatsapp{
+        content: url('../img/general/socialMedia/whatswhite.png');
+        max-width: $maxWidth;
+    }
+}
+
+img.grafismo{
+    position: absolute;
+
+    &.CoralFino{
+        $widthHeight: 80px;
+        width: $widthHeight;
+        height: $widthHeight;
+        z-index: 0;
+        content: url('../img/general/grafismos/galhoAbertoSemFundo.png');
+
+        &.frontPage{
+            transform: rotate(-14deg);
+            margin-top: 31%;
+            margin-left: 8%;
+
+            @media screen and (width: 1920px) {
+                margin-top: 21%;
+                margin-left: 16%;
+            }
+        }    
+        &.Inverso{
+            content: url('../img/general/grafismos/galhoAbertoSemFundoInverso.png');
+        } 
+        &.esquerdo{
+            left: 0;
+        }
+        &.direito{
+            right: 0;
+        }
+
+        &.Preenchido{
+            &.Verde{
+                content: url('../img/general/grafismos/coralPequenoVerdePreenchido.png');
+                &.Inverso{
+                    content: url('../img/general/grafismos/coralPequenoVerdePreenchidoInverso.png');
+                }
+            }
+        }
+    }
+    &.CoralGrosso{
+        $widthHeight: 80px;
+        width: $widthHeight;
+        height: $widthHeight;
+        z-index: 0;
+        content: url('../img/general/grafismos/coralFechadoFundo.png');
+
+        &.Inverso{
+            content: url('../img/general/grafismos/CoralFechadoFundoInverso.png');
+        }
+
+        &.esquerdo{
+            left: 0;
+        }
+        &.direito{
+            right: 0;
+        }
+
+        &.Verde{
+            content: url('../img/general/grafismos/coralFechadoVerde.png');
+        }
+    }
+}
+
+div.secName{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    h2{
+        font-size: 64px;
+        color: $TitleColorStandard;
+        margin-bottom: 0;
+    }
+
+    & .secSymbol{
+        $widthHeight: 51px;
+        content: url('../img/general/grafismos/coralPequeno.png');
+        width: $widthHeight;
+        height: $widthHeight;
+
+        &.escuro{
+            content: url('../img/general/grafismos/coralPequenoPreto.png');
+        }
+        &.verde{
+            content: url('../img/general/grafismos/coralPequenoVerdeInverso.png');
+        }
+
+        &.aboutUs{
+            content: url('../img/general/aboutUs/grafismoContato.png');
+            width: 143px;
+            height: 75px;
+            transform: scale(0.8);
+        }
+    }
+}
+
+/******************************************** END GENERAL STANDARD STYLES /********************************************/
+
+/******************************************** HEADER /********************************************/
+
+$heightHeader: 180px;
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: $mainColor;
+
+    min-height: $heightHeader;
+
+    .logo{
+        section > *{
+            margin: 0px;
+        }
+
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        img {
+            padding-top: 27px;
+            content: url('../img/general/header/logo.png');
+            max-width: 105px;
+       }
+
+       h2{
+        font-size: 40px;
+       }
+
+       h6{  
+
+            margin-top: -5px;
+            letter-spacing: 6px;
+       }
+    }
+
+    /******************************************** NAV /********************************************/
+    nav{
+        &::before,
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: white;
+            margin-top: 25px;
+            height: 1px;
+            width: 70px;
+        }
+        &::before{
+            left: 0;
+        }
+        &::after{
+            right: 0;
+        }
+
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: bold;
+        background-color: $navColor;
+
+        border-bottom: 1px solid $mainTextColor;
+
+        ul{
+            li{
+                display: inline-block;
+            }
+        }
+    } 
+    &.header-menor{
+        min-height: 100px;
+
+        & .logo {
+            section {
+                transform: scale(0.7);
+                height: 135px;
+            }
+            img{
+                max-width: 105px;
+                padding-top: 0;
+            }
+        }
+
+        & nav{
+            margin-top: 0;
+            
+        }
+    }
+}
+
+main{
+    padding-top: $heightHeader;
+    section.front-page{ /******************************************** FRONT - PAGE /********************************************/
+        font-family: 'Alegreya Sans', sans-serif;
+        margin-top: 0;
+        background-color: $rosa;
+        background-image: url('../img/general/frontPage/Pattern.png');
+        background-size: 100%;
+
+        $min-height: 636px;
+        min-height: $min-height;
+
+        section{
+            min-height: $min-height;
+            align-items: center;
+        }
+
+        .esquerdo, 
+        .direito{
+            min-width: 572px;
+        }
+
+        .direito{
+            min-width: 630px;
+        }
+
+        .esquerdo{
+            h1, h2{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: bold;
+              }
+            h2{ 
+                text-align: center;
+                font-size: 36px;
+                margin-left: -180px;
+                font-weight:1 500;
+            }
+            
+            h1{
+                display: block;
+                font-size: 85px;
+                width: 368px;
+                margin-left: auto;
+                margin-right: auto;
+    
+                letter-spacing: 1px;
+                margin-top: -18px;
+                line-height: 1em;
+            }
+    
+            button{
+                margin-top: 10px;
+                margin-bottom: 65px;
+            }
+        }
+        .direito{
+            .bannerImage{
+                content: url('../img/general/frontPage/studio.jpg');
+                max-width: 633px;
+                border-radius: 19px;
+                margin-right: 34px;
+            }
+        }
+    }
+
+    section.services{ /******************************************** SERVIÇOS /********************************************/
+        box-sizing: border-box;
+        .quadrado{
+            $border-radius: 7.64px;
+            width: 350px;
+            height: 465px;
+            border-radius: $border-radius;
+            background-color: $laranja;
+            @include sombra();
+
+            img{
+                width: 350px;
+                height: 225px;                
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+
+                &.projetoImg{
+                    content: url('../img/general/services/projeto/projeto.jpg');
+                }
+                &.consultoriaImg{
+                    content: url('../img/general/services/consultoria/consultoria.jpg');
+                }
+                &.assessoriaImg{
+                    // background-image: url('../img/general/services/assessoria/assessoria.jpg');
+                    // background-size: 90%;
+                    // background-position: center;
+                    // background-blend-mode: multiply;
+                    content: url('../img/general/services/assessoria/assessoriaProportional.png');
+                }
+                &.laudoAcusticoImg{
+                    content: url('../img/general/services/laudo/laudo.jpg');
+                }
+            }
+
+            h3, h4, button{
+                color: $mainTextColor;
+            }
+
+            h3{
+                $margin: 7px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 26px;
+                margin-top: $margin;
+                margin-bottom: $margin + 15px;
+            }
+            h4{
+                margin-top: 0;
+                text-align: justify;
+                font-family: 'Alegreya Sans', sans-serif;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            button{                
+                background-color: $marrom;
+                font-family: 'Alegreya Sans', sans-serif;
+                color: $TitleColorStandard;
+            }
+        }   
+        .grupo1{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .laudoAcustico{
+            button {
+                margin-top: -8px;
+            }
+        }
+
+        .CoralFino{
+            &.esquerdo{
+                left: -56px;
+                $widthHeight: 170px;
+                width: $widthHeight;
+                height: $widthHeight;
+                margin-top: 295px;
+                transform: rotate(14deg);
+            }
+            &.direito{
+                $widthHeight: 170px;
+                width: $widthHeight;
+                height: $widthHeight;
+                margin-top: 1015px;
+                right: -50px;
+            }
+        }
+        .CoralGrosso{
+            &.esquerdo{
+                $widthHeight: 240px;
+                width: $widthHeight;
+                height: $widthHeight;
+                margin-top: 803px;
+            }
+            &.direito{
+                $widthHeight: 190px;
+                width: $widthHeight;
+                height: $widthHeight;
+                margin-top: 505px;
+            }
+        }
+    }
+    
+    section.contact{ /******************************************** CONTATO /********************************************/
+        background-color: rgb(249, 203 , 184, 0.68);
+        margin-top: 53.120px;
+        padding-bottom: 95px;
+        font-family: 'BOSQUE';
+
+        $marginTop: 45px;
+
+        .CoralGrosso{
+            margin-top: 495px;
+            width: 190px;
+            height: 190px;
+        }
+
+        .CoralFino{
+            margin-top: 325px;
+            left: -18px;
+            transform: rotate(10deg);
+        }
+
+        .flex{
+            $marginLeft: 140px;
+            margin-top: 50px;
+            margin-left: $marginLeft;
+            margin-right: $marginLeft + 40;
+
+            @media screen and (width: 1920px){
+                $marginLeft: 210px;
+                margin-left: $marginLeft + 50px;
+                margin-right: $marginLeft + 80;
+            }
+
+            img.contactImg{
+                content: url('../img/general/contact/coffe.png');
+                max-width: 410px;
+                max-height: 415px;
+                border-radius: 20px;
+                margin-top: 58px;
+            }
+
+            .grupo1{
+                .redesSociais{
+                    margin-top: 36px;     
+                    // & > * {@include sombra();}
+                }
+            }
+
+            .grupo2{
+                width: 435px;
+
+                @media screen and (width: 1920px) {
+                    width: 620px;
+                }
+
+                .entreEmContato{
+                    font-weight: 600;
+                    text-align: center;
+                    margin-top: -12px;
+                    margin-bottom: 38px;
+                }
+
+                button {
+                    width: 250px;
+                    background-color: $mainColorBrighter;
+                    color: $mainTextColor;
+                }
+            }
+        }
+
+        h2, h3, p, label, textarea{
+            color: $ContactTextColor;
+        }
+
+        label{
+            font-size: 23px;
+        }
+
+        
+
+        form{
+            & * {
+                display: block;
+                width: 100%;
+            }
+
+            input, textarea{
+                border: 1px solid white;
+                border-radius: 3px;
+                background: none;
+                @include sombra();
+            }
+
+            input{
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                box-shadow: rgb(0,0,0, 0.09) 0px 2px;
+            }
+
+            textarea{
+                margin-bottom: $marginTop;
+            }
+
+            #nome{
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+    
+}

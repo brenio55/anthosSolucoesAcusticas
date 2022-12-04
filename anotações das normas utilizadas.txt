@@ -1,0 +1,32 @@
+1 - NBR 10151:2019 Errata 1:2020
+Título – Acústica – Medição e avaliação de níveis de pressão sonora em áreas habitadas – Aplicação de uso geral
+
+2 - NBR 10152:2017 Errata 1:2020
+Título – Acústica – Níveis de pressão sonora em ambientes internos a edificações 
+
+3 - NBR ISO 16283-1:2018
+Título – Acústica – Medição de campo do isolamento acústico nas edificações e nos elementos de edificações. – Parte 1: Isolamento a ruído aéreo
+
+4 - NBR ISO 3382-2:2017
+Título – Acústica – Medição de parâmetros de acústica de salas – Parte 2: Tempo de reverberação em salas comuns
+
+5 - NBR 16313:2014
+Título – Acústica – Terminologia
+
+6 - NBR 15575 – Partes 1 a 6
+Título – Edificações habitacionais – Desempenho
+
+7 - NBR ISO/IEC 17025:2017
+Título – Requisitos gerais para a competência de laboratórios de ensaio e calibração.
+
+Livros de acústica utilizados para os projetos 
+
+1 - THE HAND BOOK OF NOISE CONTROL
+2 - McGraw Hill Higher Education; 2ª edição (1 janeiro 1979)
+3 - Building Acoustics – Tor Erik Vigran
+4 - Architectural Acoustics – Marshall Long
+5 - Master Handbook of Acoustics – Ken C. Pohlmann e F. Alton Everest
+6 - Acústica aplicada ao controle do ruído – Sylvio R. Bistafa
+7 - Sinais e Sistemas – Alan V. Oppenheim e Alan S. Willsky
+8 - Acústica de Salas- Projeto e Modelagem – Eric Brandão
+9 - Acústica nos Edifícios – Jorge Patrício
