@@ -65,6 +65,10 @@ li{
     list-style-type: none;
     padding-inline: 15px;
 }
+a{
+    color: unset;
+    text-decoration: unset;
+}
 
 .linha{
     display: block;
@@ -636,6 +640,16 @@ main{
         background-position: center;
         background-repeat: repeat-y;
 
+        &::after{
+            content: '';
+            width: 100%;
+            height: 1710px;
+            background-image: url('../img/general/aboutUs/pattern.png');
+            position: absolute;
+            background-size: 70%;
+            z-index: 0;
+        }
+
         @mixin descriptionStyle($paddingLR: 0) {
             padding-left: $paddingLR;
             padding-right: $paddingLR;
@@ -643,6 +657,12 @@ main{
             font-style: italic;
         }
 
+        a{
+            color: $laranja;
+            &:hover{
+                cursor: pointer;
+            }
+        }
         div.info{
             $marginLeft: 15px;
             $defaultSpacing: 0px auto 0 $marginLeft;
@@ -689,7 +709,6 @@ main{
         }
         section.aboutUsParte3{
             margin: auto;
-
         }
     }
 }
