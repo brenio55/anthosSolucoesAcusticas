@@ -49,6 +49,9 @@ a {
   color: unset;
   text-decoration: unset;
 }
+a:hover {
+  cursor: pointer;
+}
 
 .linha {
   display: block;
@@ -510,20 +513,17 @@ main section.aboutUs {
   background-position: center;
   background-repeat: repeat-y;
 }
-main section.aboutUs::after {
+main section.aboutUs::before {
   content: "";
   width: 100%;
   height: 1710px;
   background-image: url("../img/general/aboutUs/pattern.png");
   position: absolute;
   background-size: 70%;
-  z-index: 0;
+  pointer-events: none;
 }
 main section.aboutUs a {
   color: #E9664A;
-}
-main section.aboutUs a:hover {
-  cursor: pointer;
 }
 main section.aboutUs div.info .frankiNome {
   font-weight: 500;

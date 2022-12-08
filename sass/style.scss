@@ -68,6 +68,9 @@ li{
 a{
     color: unset;
     text-decoration: unset;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .linha{
@@ -640,14 +643,14 @@ main{
         background-position: center;
         background-repeat: repeat-y;
 
-        &::after{
+        &::before{
             content: '';
             width: 100%;
             height: 1710px;
             background-image: url('../img/general/aboutUs/pattern.png');
             position: absolute;
             background-size: 70%;
-            z-index: 0;
+            pointer-events: none;
         }
 
         @mixin descriptionStyle($paddingLR: 0) {
@@ -659,9 +662,6 @@ main{
 
         a{
             color: $laranja;
-            &:hover{
-                cursor: pointer;
-            }
         }
         div.info{
             $marginLeft: 15px;
