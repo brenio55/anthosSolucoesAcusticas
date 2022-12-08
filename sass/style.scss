@@ -247,9 +247,8 @@ div.secName{
 
         &.aboutUs{
             content: url('../img/general/aboutUs/grafismoContato.png');
-            width: 143px;
-            height: 75px;
-            transform: scale(0.8);
+            width: 71.5px;
+            height: 37.5px;
         }
     }
 }
@@ -630,5 +629,43 @@ main{
         }
 
     }
-    
+    section.aboutUs{
+        background-color: $verdeSobreNos;
+        background-image: url('../img/general/aboutUs//anthosLogomarca.png');
+        background-size: 90%;
+        background-position: center;
+        background-repeat: repeat-y;
+
+        @mixin descriptionStyle($paddingLR) {
+            padding-left: $paddingLR;
+            padding-right: $paddingLR;
+            text-align: justify;
+            font-style: italic;
+        }
+
+        div.info{
+            $marginLeft: 15px;
+            $defaultSpacing: 0px auto 0 $marginLeft;
+
+            .frankiNome{
+                font-weight: 500;
+                font-size: 28px;
+                margin: 25px auto 0 $marginLeft;
+            }
+            .funcao, .cargo, .cau, .cauNUM, .cnpj, .cnpjNUM{
+                margin: $defaultSpacing;
+            }
+            .cau, .cnpj{
+                margin-top: 7px;
+                font-weight: 500;
+            }
+            .descricao1{
+                @include descriptionStyle(360px);
+            }
+        }
+        section.aboutUsParte2 > .flex.center{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }

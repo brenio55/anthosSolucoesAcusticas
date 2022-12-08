@@ -204,9 +204,8 @@ div.secName .secSymbol.verde {
 }
 div.secName .secSymbol.aboutUs {
   content: url("../img/general/aboutUs/grafismoContato.png");
-  width: 143px;
-  height: 75px;
-  transform: scale(0.8);
+  width: 71.5px;
+  height: 37.5px;
 }
 
 /******************************************** END GENERAL STANDARD STYLES /********************************************/
@@ -498,4 +497,33 @@ main section.contact form textarea {
 }
 main section.contact form #nome {
   margin-bottom: 15px;
+}
+main section.aboutUs {
+  background-color: #09323E;
+  background-image: url("../img/general/aboutUs//anthosLogomarca.png");
+  background-size: 90%;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+main section.aboutUs div.info .frankiNome {
+  font-weight: 500;
+  font-size: 28px;
+  margin: 25px auto 0 15px;
+}
+main section.aboutUs div.info .funcao, main section.aboutUs div.info .cargo, main section.aboutUs div.info .cau, main section.aboutUs div.info .cauNUM, main section.aboutUs div.info .cnpj, main section.aboutUs div.info .cnpjNUM {
+  margin: 0px auto 0 15px;
+}
+main section.aboutUs div.info .cau, main section.aboutUs div.info .cnpj {
+  margin-top: 7px;
+  font-weight: 500;
+}
+main section.aboutUs div.info .descricao1 {
+  padding-left: 360px;
+  padding-right: 360px;
+  text-align: justify;
+  font-style: italic;
+}
+main section.aboutUs section.aboutUsParte2 > .flex.center {
+  flex-direction: column;
+  text-align: center;
 }
