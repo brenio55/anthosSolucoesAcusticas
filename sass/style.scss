@@ -88,15 +88,32 @@ a{
 
 $valueLRLinha: 13%;
 
-.LesquerdaTop{
-    right: $valueLRLinha;
+/* ///// TOP LINES ////// */
+
+.LesquerdaTop, .LdireitaTop{
     top: 0;
 }
 
-.LdireitaTop{
-    left: $valueLRLinha;
-    top: 0;
+/* ///// BOT LINES ////// */
+
+.LesquerdaBot, .LdireitaBot{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
 }
+
+/* ///// TOP BOT LINES L--R ////// */
+
+.LesquerdaTop, .LesquerdaBot{
+    right: $valueLRLinha;
+}
+
+.LdireitaTop, .LdireitaBot{
+    left: $valueLRLinha;
+}
+
+/* ///// END LINES ////// */
 
 section .flex{
     display: flex;
@@ -710,5 +727,22 @@ main{
         section.aboutUsParte3{
             margin: auto;
         }
+    }
+}
+footer{
+    &::before, &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: white;
+            margin-top: 25px;
+            height: 1px;
+            width: 70px;
+        }
+    &::before{
+        left: 0;
+    }
+    &::after{
+        right: 0;
     }
 }
