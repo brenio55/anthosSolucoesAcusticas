@@ -501,7 +501,7 @@ main section.contact form #nome {
 main section.aboutUs {
   background-color: #09323E;
   background-image: url("../img/general/aboutUs//anthosLogomarca.png");
-  background-size: 90%;
+  background-size: 60%;
   background-position: center;
   background-repeat: repeat-y;
 }
@@ -523,7 +523,36 @@ main section.aboutUs div.info .descricao1 {
   text-align: justify;
   font-style: italic;
 }
-main section.aboutUs section.aboutUsParte2 > .flex.center {
+main section.aboutUs section.aboutUsParte2 > .flex.center, main section.aboutUs section.aboutUsParte3 {
   flex-direction: column;
   text-align: center;
+  width: 500px;
+}
+main section.aboutUs section.aboutUsParte2 {
+  margin-top: 15px;
+}
+main section.aboutUs section.aboutUsParte2 .descricao2 {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+  font-style: italic;
+}
+main section.aboutUs section.aboutUsParte2 .descricao3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  font-style: italic;
+}
+main section.aboutUs section.aboutUsParte2 .stimexImg {
+  max-width: 398px;
+  max-height: 367px;
+  margin: 0 auto;
+}
+main section.aboutUs section.aboutUsParte2 .projAcusticoImg {
+  max-width: 508px;
+  max-height: 388px;
+  margin: 0 auto;
+}
+main section.aboutUs section.aboutUsParte3 {
+  margin: auto;
 }
