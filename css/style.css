@@ -29,6 +29,7 @@ html, body {
   color: #F8DAD0;
   font-family: "Bosque";
   overflow-x: hidden;
+  position: static;
 }
 
 img {
@@ -73,7 +74,7 @@ a:hover {
 
 /* ///// BOT LINES ////// */
 .LesquerdaBot, .LdireitaBot {
-  position: relative;
+  position: absolute;
   bottom: 0;
   margin: 0;
   padding: 0;
@@ -81,11 +82,11 @@ a:hover {
 
 /* ///// TOP BOT LINES L--R ////// */
 .LesquerdaTop, .LesquerdaBot {
-  right: 13%;
+  left: 13%;
 }
 
 .LdireitaTop, .LdireitaBot {
-  left: 13%;
+  right: 13%;
 }
 
 /* ///// END LINES ////// */
@@ -560,6 +561,7 @@ main section.aboutUs section.aboutUsParte2 > .flex.center, main section.aboutUs 
   flex-direction: column;
   text-align: center;
   width: 500px;
+  align-self: flex-start;
 }
 main section.aboutUs section.aboutUsParte2 {
   margin-top: 15px;
@@ -590,6 +592,10 @@ main section.aboutUs section.aboutUsParte3 {
   margin: auto;
 }
 
+footer {
+  position: relative;
+  overflow: hidden;
+}
 footer::before, footer::after {
   content: "";
   display: block;
@@ -601,7 +607,9 @@ footer::before, footer::after {
 }
 footer::before {
   left: 0;
+  margin-top: 12%;
 }
 footer::after {
   right: 0;
+  margin-top: -12%;
 }
