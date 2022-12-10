@@ -54,6 +54,10 @@ html, body{
     position: static;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 img{
     max-width: 100%;
 }
@@ -359,6 +363,9 @@ header {
         ul{
             li{
                 display: inline-block;
+                &:hover{
+                    
+                }
             }
         }
     } 

@@ -22,7 +22,7 @@
     <script src="scroll.js"></script>
     <script src="send.js"></script>
 </head>
-<body> <!-- verificar possibilidade de fazer linhas com pseudoclasse no body-->
+<body id="home"> <!-- verificar possibilidade de fazer linhas com pseudoclasse no body-->
     <span class="linha LdireitaTop"></span>
     <span class="linha LesquerdaTop"></span>
 
@@ -36,10 +36,10 @@
         </div>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>SERVIÇOS</li>
-                <li>CONTATO</li>
-                <li>SOBRE</li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVIÇOS</a></li>
+                <li><a href="#contact">CONTATO</a></li>
+                <li><a href="#aboutUs">SOBRE</a></li>
             </ul>
         </nav>
     </header> <!-- fazer linhas esquerda e direta com pseudoclasse-->
@@ -63,7 +63,7 @@
                 </article>
             </section>
         </section>
-        <section class="services"> <!-- SERVIÇOS -->
+        <section class="services" id="services"> <!-- SERVIÇOS -->
             <img class="grafismo CoralFino Inverso esquerdo" alt="Coral Fino Grafismo de decoração">
             <img class="grafismo CoralGrosso direito" alt="Coral Grosso Grafismo de decoração">
 
@@ -118,7 +118,7 @@
                     </article>
                 </section>
         </section>
-        <section class="contact"> <!-- CONTATO -->
+        <section class="contact" id="contact"> <!-- CONTATO -->
             <img class="grafismo CoralFino Verde Preenchido Inverso esquerdo" alt="Coral Fino Grafismo de decoração">
             <img class="grafismo CoralGrosso Verde direito" alt="Coral Grosso Grafismo de decoração">
 
@@ -151,7 +151,7 @@
             </section>
         </section>
 
-        <section class="aboutUs"> <!-- SOBRE NÓS -->
+        <section class="aboutUs" id="aboutUs"> <!-- SOBRE NÓS -->
             <div class="secName">
                 <h2 class="secTitle">Sobre Nós</h2>
                 <img src="" alt="grafismo coral grosso" class="secSymbol aboutUs">
