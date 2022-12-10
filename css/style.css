@@ -54,6 +54,10 @@ a:hover {
   cursor: pointer;
 }
 
+body {
+  position: relative;
+}
+
 .linha {
   display: block;
   position: fixed;
@@ -65,6 +69,10 @@ a:hover {
 
 .linha-menor {
   height: 94px;
+}
+
+footer > .linha {
+  height: 135px;
 }
 
 /* ///// TOP LINES ////// */
@@ -90,19 +98,19 @@ a:hover {
 }
 
 /* ///// END LINES ////// */
-section .flex {
+section.flex {
   display: flex;
 }
-section .flex.center {
+section.flex.center {
   justify-content: center;
 }
-section .flex.spaceEvenly {
+section.flex.spaceEvenly {
   justify-content: space-evenly;
 }
-section .flex.spaceBetween {
+section.flex.spaceBetween {
   justify-content: space-between;
 }
-section .flex.column {
+section.flex.column {
   flex-direction: column;
 }
 
@@ -521,6 +529,7 @@ main section.contact form #nome {
   margin-bottom: 15px;
 }
 main section.aboutUs {
+  position: relative;
   background-color: #09323E;
   background-image: url("../img/general/aboutUs//anthosLogomarca.png");
   background-size: 60%;
@@ -538,6 +547,9 @@ main section.aboutUs::before {
 }
 main section.aboutUs a {
   color: #E9664A;
+}
+main section.aboutUs section.informacoesGerais {
+  padding-bottom: 135px;
 }
 main section.aboutUs div.info .frankiNome {
   font-weight: 500;
@@ -591,25 +603,65 @@ main section.aboutUs section.aboutUsParte2 .projAcusticoImg {
 main section.aboutUs section.aboutUsParte3 {
   margin: auto;
 }
-
-footer {
-  position: relative;
-  overflow: hidden;
-}
-footer::before, footer::after {
+main section.aboutUs::before, main section.aboutUs::after {
   content: "";
   display: block;
   position: absolute;
   background: white;
-  margin-top: 25px;
   height: 1px;
   width: 70px;
 }
-footer::before {
+main section.aboutUs::before {
   left: 0;
-  margin-top: 12%;
+  bottom: 0;
+  margin-bottom: 60px;
 }
-footer::after {
+main section.aboutUs::after {
   right: 0;
-  margin-top: -12%;
+  bottom: 0;
+  margin-bottom: 60px;
+}
+
+footer {
+  height: 135px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Alegreya Sans", sans-serif;
+}
+footer .flex {
+  height: 100%;
+  width: 500px;
+  align-items: center;
+  align-self: center;
+  margin: auto;
+}
+footer .flex .logo {
+  text-align: center;
+  font-family: "BOSQUE";
+}
+footer .flex .logo h2, footer .flex .logo h6 {
+  margin: 0;
+}
+footer .flex .redesSociais {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-align: center;
+  gap: 3px;
+}
+footer .flex .redesSociais section.flex.center {
+  gap: 15px;
+  margin-bottom: 13px;
+}
+footer .flex .redesSociais h4 {
+  margin: 0;
+}
+footer .flex .redesSociais .instagram, footer .flex .redesSociais .whatsapp {
+  width: 36px;
+}
+footer .flex .redesSociais, footer .flex ul > li {
+  font-weight: 600;
+}
+footer .flex ul {
+  line-height: 25px;
 }
