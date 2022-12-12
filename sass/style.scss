@@ -82,49 +82,49 @@ body{
     position: relative;
 }
 
-.linha{
-    display: block;
-    position: fixed;
-    height: 135px;
-    width: 1px;
-    background: white;
-    z-index: 2;
-}
+// .linha{
+//     display: block;
+//     position: fixed;
+//     height: 135px;
+//     width: 1px;
+//     background: white;
+//     z-index: 2;
+// }
 
-.linha-menor{
-    height: 94px;
-}
+// .linha-menor{
+//     height: 94px;
+// }
 
-footer > .linha{
-    height: 135px;
-}
+// footer > .linha{
+//     height: 135px;
+// }
 
-$valueLRLinha: 13%;
+// $valueLRLinha: 13%;
 
 /* ///// TOP LINES ////// */
 
-.LesquerdaTop, .LdireitaTop{
-    top: 0;
-}
+// .LesquerdaTop, .LdireitaTop{
+//     top: 0;
+// }
 
-/* ///// BOT LINES ////// */
+// /* ///// BOT LINES ////// */
 
-.LesquerdaBot, .LdireitaBot{
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-}
+// .LesquerdaBot, .LdireitaBot{
+//     position: absolute;
+//     bottom: 0;
+//     margin: 0;
+//     padding: 0;
+// }
 
-/* ///// TOP BOT LINES L--R ////// */
+// /* ///// TOP BOT LINES L--R ////// */
 
-.LesquerdaTop, .LesquerdaBot{
-    left: $valueLRLinha;
-}
+// .LesquerdaTop, .LesquerdaBot{
+//     left: $valueLRLinha;
+// }
 
-.LdireitaTop, .LdireitaBot{
-    right: $valueLRLinha;
-}
+// .LdireitaTop, .LdireitaBot{
+//     right: $valueLRLinha;
+// }
 
 /* ///// END LINES ////// */
 
@@ -333,22 +333,22 @@ header {
 
     /******************************************** NAV /********************************************/
     nav{
-        &::before,
-        &::after{
-            content: '';
-            display: block;
-            position: absolute;
-            background: white;
-            margin-top: 25px;
-            height: 1px;
-            width: 70px;
-        }
-        &::before{
-            left: 0;
-        }
-        &::after{
-            right: 0;
-        }
+        // &::before,
+        // &::after{
+        //     content: '';
+        //     display: block;
+        //     position: absolute;
+        //     background: white;
+        //     margin-top: 25px;
+        //     height: 1px;
+        //     width: 70px;
+        // }
+        // &::before{
+        //     left: 0;
+        // }
+        // &::after{
+        //     right: 0;
+        // }
 
         margin-top: 25px;
         display: flex;
@@ -748,25 +748,25 @@ main{
         section.aboutUsParte3{
             margin: auto;
         }
-        &::before, &::after{
-            content: '';
-            display: block;
-            position: absolute;
-            background: white;
-            // margin-top: 25px;
-            height: 1px;
-            width: 70px;
-        }
-        &::before{
-            left: 0;
-            bottom: 0;
-            margin-bottom: 60px;
-        }
-        &::after{
-            right: 0;
-            bottom: 0;
-            margin-bottom: 60px;
-        }
+        // &::before, &::after{
+        //     content: '';
+        //     display: block;
+        //     position: absolute;
+        //     background: white;
+        //     // margin-top: 25px;
+        //     height: 1px;
+        //     width: 70px;
+        // }
+        // &::before{
+        //     left: 0;
+        //     bottom: 0;
+        //     margin-bottom: 60px;
+        // }
+        // &::after{
+        //     right: 0;
+        //     bottom: 0;
+        //     margin-bottom: 60px;
+        // }
     }
 }
 footer{

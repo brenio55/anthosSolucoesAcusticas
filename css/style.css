@@ -62,45 +62,7 @@ body {
   position: relative;
 }
 
-.linha {
-  display: block;
-  position: fixed;
-  height: 135px;
-  width: 1px;
-  background: white;
-  z-index: 2;
-}
-
-.linha-menor {
-  height: 94px;
-}
-
-footer > .linha {
-  height: 135px;
-}
-
 /* ///// TOP LINES ////// */
-.LesquerdaTop, .LdireitaTop {
-  top: 0;
-}
-
-/* ///// BOT LINES ////// */
-.LesquerdaBot, .LdireitaBot {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* ///// TOP BOT LINES L--R ////// */
-.LesquerdaTop, .LesquerdaBot {
-  left: 13%;
-}
-
-.LdireitaTop, .LdireitaBot {
-  right: 13%;
-}
-
 /* ///// END LINES ////// */
 section.flex {
   display: flex;
@@ -281,21 +243,6 @@ header nav {
   font-weight: bold;
   background-color: #0e7989;
   border-bottom: 1px solid #F8DAD0;
-}
-header nav::before, header nav::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: white;
-  margin-top: 25px;
-  height: 1px;
-  width: 70px;
-}
-header nav::before {
-  left: 0;
-}
-header nav::after {
-  right: 0;
 }
 header nav ul li {
   display: inline-block;
@@ -606,24 +553,6 @@ main section.aboutUs section.aboutUsParte2 .projAcusticoImg {
 }
 main section.aboutUs section.aboutUsParte3 {
   margin: auto;
-}
-main section.aboutUs::before, main section.aboutUs::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: white;
-  height: 1px;
-  width: 70px;
-}
-main section.aboutUs::before {
-  left: 0;
-  bottom: 0;
-  margin-bottom: 60px;
-}
-main section.aboutUs::after {
-  right: 0;
-  bottom: 0;
-  margin-bottom: 60px;
 }
 
 footer {
