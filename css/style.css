@@ -208,7 +208,7 @@ div.secName .secSymbol.aboutUs {
 /******************************************** HEADER /********************************************/
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background: #093641;
   min-height: 180px;
@@ -227,6 +227,8 @@ header .logo img {
   padding-top: 27px;
   content: url("../img/general/header/logo.png");
   max-width: 105px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header .logo h2 {
   font-size: 40px;
@@ -315,6 +317,16 @@ main section.front-page .direito .bannerImage {
   border-radius: 19px;
   margin-right: 34px;
 }
+@media screen and (min-width: 360px) {
+  main section.front-page {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.front-page {
+    display: block;
+  }
+}
 main section.services { /******************************************** SERVIÇOS /********************************************/
   box-sizing: border-box;
 }
@@ -324,6 +336,7 @@ main section.services .quadrado {
   border-radius: 7.64px;
   background-color: #E9664A;
   box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
+  z-index: 1;
 }
 main section.services .quadrado img {
   width: 350px;
@@ -365,12 +378,37 @@ main section.services .quadrado button {
   font-family: "Alegreya Sans", sans-serif;
   color: #f9cbb8;
 }
+@media screen and (min-width: 360px) {
+  main section.services .quadrado {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.services .quadrado {
+    margin: unset;
+  }
+}
+@media screen and (min-width: 360px) {
+  main section.services .grupo1, main section.services .grupo2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.services .grupo1, main section.services .grupo2 {
+    flex-direction: row;
+    gap: unset;
+  }
+}
 main section.services .grupo1 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 main section.services .laudoAcustico button {
   margin-top: -8px;
+}
+main section.services .CoralFino > * {
+  z-index: 0;
 }
 main section.services .CoralFino.esquerdo {
   left: -56px;
@@ -385,6 +423,9 @@ main section.services .CoralFino.direito {
   margin-top: 1015px;
   right: -50px;
 }
+main section.services .CoralGrosso > * {
+  z-index: 0;
+}
 main section.services .CoralGrosso.esquerdo {
   width: 240px;
   height: 240px;
@@ -394,6 +435,11 @@ main section.services .CoralGrosso.direito {
   width: 190px;
   height: 190px;
   margin-top: 505px;
+}
+@media screen and (min-width: 360px) {
+  main section.services {
+    margin-top: 35px;
+  }
 }
 main section.contact { /******************************************** CONTATO /********************************************/
   background-color: rgba(249, 203, 184, 0.68);
@@ -411,17 +457,6 @@ main section.contact .CoralFino {
   left: -18px;
   transform: rotate(10deg);
 }
-main section.contact .flex {
-  margin-top: 50px;
-  margin-left: 140px;
-  margin-right: 180px;
-}
-@media screen and (width: 1920px) {
-  main section.contact .flex {
-    margin-left: 260px;
-    margin-right: 290px;
-  }
-}
 main section.contact .flex img.contactImg {
   content: url("../img/general/contact/coffe.png");
   max-width: 410px;
@@ -432,8 +467,28 @@ main section.contact .flex img.contactImg {
 main section.contact .flex .grupo1 .redesSociais {
   margin-top: 36px;
 }
+@media screen and (min-width: 360px) {
+  main section.contact .flex .grupo1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.contact .flex .grupo1 {
+    display: block;
+  }
+}
 main section.contact .flex .grupo2 {
   width: 435px;
+}
+@media screen and (min-width: 360px) {
+  main section.contact .flex .grupo2 {
+    width: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.contact .flex .grupo2 {
+    width: 435px;
+  }
 }
 @media screen and (width: 1920px) {
   main section.contact .flex .grupo2 {
@@ -450,6 +505,26 @@ main section.contact .flex .grupo2 button {
   width: 250px;
   background-color: #164850;
   color: #F8DAD0;
+}
+@media screen and (min-width: 360px) {
+  main section.contact .flex {
+    margin: 50px auto;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.contact .flex {
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 180px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1920px) {
+  main section.contact .flex {
+    margin-left: 260px;
+    margin-right: 290px;
+  }
 }
 main section.contact h2, main section.contact h3, main section.contact p, main section.contact label, main section.contact textarea {
   color: #164850;
