@@ -208,10 +208,17 @@ img.grafismo{
             margin-top: 31%;
             margin-left: 8%;
 
+            @media screen and (min-width: 360px){
+                display: none;
+            }
+            @media screen and (min-width: 468px){
+                display: block;
+            }
             @media screen and (width: 1920px) {
                 margin-top: 21%;
                 margin-left: 16%;
             }
+            
         }    
         &.Inverso{
             content: url('../img/general/grafismos/galhoAbertoSemFundoInverso.png');
@@ -404,6 +411,17 @@ main{
         $min-height: 636px;
         min-height: $min-height;
 
+        @media screen and (min-width: 360px){
+            $min-height: 510px;
+            min-height: $min-height;
+            max-height: 510px;
+        }
+        @media screen and (min-width: 768px){
+            $min-height: 636px;
+            min-height: $min-height;
+            max-height: unset;
+        }
+
         section{
             min-height: $min-height;
             align-items: center;
@@ -447,6 +465,12 @@ main{
                 margin-top: 10px;
                 margin-bottom: 65px;
             }
+            @media screen and (min-width: 360px){
+                transform: scale(0.8);;
+            }
+            @media screen and (min-width: 768px){
+                transform: scale(1);
+            }
         }
         .direito{
             .bannerImage{
@@ -455,13 +479,14 @@ main{
                 border-radius: 19px;
                 margin-right: 34px;
             }
+            @media screen and (min-width: 360px){
+                display: none;
+            }
+            @media screen and (min-width: 768px){
+                display: block;
+            }
         }
-        @media screen and (min-width: 360px){
-            display: none;
-        }
-        @media screen and (min-width: 768px){
-            display: block;
-        }
+        
     }
 
     section.services{ /******************************************** SERVIÇOS /********************************************/

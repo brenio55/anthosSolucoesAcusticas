@@ -135,6 +135,16 @@ img.grafismo.CoralFino.frontPage {
   margin-top: 31%;
   margin-left: 8%;
 }
+@media screen and (min-width: 360px) {
+  img.grafismo.CoralFino.frontPage {
+    display: none;
+  }
+}
+@media screen and (min-width: 468px) {
+  img.grafismo.CoralFino.frontPage {
+    display: block;
+  }
+}
 @media screen and (width: 1920px) {
   img.grafismo.CoralFino.frontPage {
     margin-top: 21%;
@@ -275,6 +285,18 @@ main section.front-page { /******************************************** FRONT - 
   background-size: 100%;
   min-height: 636px;
 }
+@media screen and (min-width: 360px) {
+  main section.front-page {
+    min-height: 510px;
+    max-height: 510px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.front-page {
+    min-height: 636px;
+    max-height: unset;
+  }
+}
 main section.front-page section {
   min-height: 636px;
   align-items: center;
@@ -311,6 +333,16 @@ main section.front-page .esquerdo button {
   margin-top: 10px;
   margin-bottom: 65px;
 }
+@media screen and (min-width: 360px) {
+  main section.front-page .esquerdo {
+    transform: scale(0.8);
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.front-page .esquerdo {
+    transform: scale(1);
+  }
+}
 main section.front-page .direito .bannerImage {
   content: url("../img/general/frontPage/studio.jpg");
   max-width: 633px;
@@ -318,12 +350,12 @@ main section.front-page .direito .bannerImage {
   margin-right: 34px;
 }
 @media screen and (min-width: 360px) {
-  main section.front-page {
+  main section.front-page .direito {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  main section.front-page {
+  main section.front-page .direito {
     display: block;
   }
 }
