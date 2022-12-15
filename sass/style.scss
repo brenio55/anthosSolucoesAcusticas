@@ -775,6 +775,43 @@ main{
             }
             .descricao1{
                 @include descriptionStyle(360px);
+
+                @media screen and (min-width: 360px){
+                    padding-left: unset;
+                    padding-right: unset;
+                }
+                @media screen and (min-width: 768px){
+                    padding-left: 360px;
+                    padding-right: 360px;
+                }
+            }
+
+            .flex.center{
+                div:first-child{
+                    @media screen and (min-width: 360px){
+                        margin: 15px auto;
+                        margin-bottom: 0;
+                        
+                    }    
+                    @media screen and (min-width: 768px){
+                        margin: unset;
+                        
+                    }
+                }
+                @media screen and (min-width: 360px){
+                    flex-direction: column;                    
+                }    
+                @media screen and (min-width: 768px){
+                    flex-direction: row;                    
+                }
+            }
+
+            @media screen and (min-width: 360px){
+                width: 310px;
+                
+            }
+            @media screen and (min-width: 768px){
+                width: unset;
             }
         }
         section.aboutUsParte2 > .flex.center, section.aboutUsParte3{
@@ -782,6 +819,15 @@ main{
             text-align: center;
             width: 500px;
             align-self: flex-start;
+
+            @media screen and (min-width: 360px){
+                margin: 0 auto;
+                width: 310px;                    
+            }    
+            @media screen and (min-width: 768px){
+                width: 500px;                    
+                margin: unset;
+            }
         }
         section.aboutUsParte2{
             margin-top: 15px;
@@ -791,15 +837,36 @@ main{
             .descricao3{
                 @include descriptionStyle(10px);
             }
-            .stimexImg{
-                max-width: 398px;
-                max-height: 367px;
+            .stimexImg{                
                 margin: 0 auto;
+                @media screen and (min-width: 360px){
+                    max-width: calc(398px - 50px);
+                    max-height: calc(367px - 50px);               
+                }    
+                @media screen and (min-width: 768px){
+                    width: 500px;     
+                    max-width: 398px;
+                    max-height: 367px;               
+                }
             }
             .projAcusticoImg{
-                max-width: 508px;
-                max-height: 388px;
                 margin: 0 auto;
+
+                @media screen and (min-width: 360px){
+                    max-width: calc(508px - 160px);
+                    max-height: calc(388px - 150px);               
+                }    
+                @media screen and (min-width: 768px){
+                    width: 500px;     
+                    max-width: 508px;
+                    max-height: 388px;               
+                }
+            }
+            @media screen and (min-width: 360px){
+                flex-direction: column;                    
+            }    
+            @media screen and (min-width: 768px){
+                flex-direction: row;                    
             }
         }
         section.aboutUsParte3{

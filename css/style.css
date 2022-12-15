@@ -595,11 +595,66 @@ main section.aboutUs div.info .descricao1 {
   text-align: justify;
   font-style: italic;
 }
+@media screen and (min-width: 360px) {
+  main section.aboutUs div.info .descricao1 {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs div.info .descricao1 {
+    padding-left: 360px;
+    padding-right: 360px;
+  }
+}
+@media screen and (min-width: 360px) {
+  main section.aboutUs div.info .flex.center div:first-child {
+    margin: 15px auto;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs div.info .flex.center div:first-child {
+    margin: unset;
+  }
+}
+@media screen and (min-width: 360px) {
+  main section.aboutUs div.info .flex.center {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs div.info .flex.center {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 360px) {
+  main section.aboutUs div.info {
+    width: 310px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs div.info {
+    width: unset;
+  }
+}
 main section.aboutUs section.aboutUsParte2 > .flex.center, main section.aboutUs section.aboutUsParte3 {
   flex-direction: column;
   text-align: center;
   width: 500px;
   align-self: flex-start;
+}
+@media screen and (min-width: 360px) {
+  main section.aboutUs section.aboutUsParte2 > .flex.center, main section.aboutUs section.aboutUsParte3 {
+    margin: 0 auto;
+    width: 310px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs section.aboutUsParte2 > .flex.center, main section.aboutUs section.aboutUsParte3 {
+    width: 500px;
+    margin: unset;
+  }
 }
 main section.aboutUs section.aboutUsParte2 {
   margin-top: 15px;
@@ -617,14 +672,46 @@ main section.aboutUs section.aboutUsParte2 .descricao3 {
   font-style: italic;
 }
 main section.aboutUs section.aboutUsParte2 .stimexImg {
-  max-width: 398px;
-  max-height: 367px;
   margin: 0 auto;
 }
+@media screen and (min-width: 360px) {
+  main section.aboutUs section.aboutUsParte2 .stimexImg {
+    max-width: 348px;
+    max-height: 317px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs section.aboutUsParte2 .stimexImg {
+    width: 500px;
+    max-width: 398px;
+    max-height: 367px;
+  }
+}
 main section.aboutUs section.aboutUsParte2 .projAcusticoImg {
-  max-width: 508px;
-  max-height: 388px;
   margin: 0 auto;
+}
+@media screen and (min-width: 360px) {
+  main section.aboutUs section.aboutUsParte2 .projAcusticoImg {
+    max-width: 348px;
+    max-height: 238px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs section.aboutUsParte2 .projAcusticoImg {
+    width: 500px;
+    max-width: 508px;
+    max-height: 388px;
+  }
+}
+@media screen and (min-width: 360px) {
+  main section.aboutUs section.aboutUsParte2 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.aboutUs section.aboutUsParte2 {
+    flex-direction: row;
+  }
 }
 main section.aboutUs section.aboutUsParte3 {
   margin: auto;
