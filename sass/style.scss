@@ -606,12 +606,24 @@ main{
             margin-top: 495px;
             width: 190px;
             height: 190px;
+            @media screen and (min-width: 360px){
+                opacity: 0.2;
+            }
+            @media screen and (min-width: 468px){
+                opacity: 1;
+            }
         }
 
         .CoralFino{
             margin-top: 325px;
             left: -18px;
             transform: rotate(10deg);
+            @media screen and (min-width: 360px){
+                opacity: 0.2;
+            }
+            @media screen and (min-width: 468px){
+                opacity: 1;
+            }
         }
 
         .flex{
@@ -755,7 +767,7 @@ main{
             color: $laranja;
         }
         section.informacoesGerais{
-            padding-bottom: 135px;
+            padding-bottom: 45px;
         }
         div.info{
             $marginLeft: 15px;
@@ -916,6 +928,13 @@ footer{
             h2, h6{
                 margin: 0;
             }
+            @media screen and (min-width: 360px){
+                padding-top: 15px;
+                max-width: 90px;
+            }
+            @media screen and (min-width: 768px){
+                max-width: 100%;
+            }
         }
         .redesSociais{
             display: flex;
@@ -935,12 +954,49 @@ footer{
             .instagram, .whatsapp{
                 width: 36px;
             }
+            @media screen and (min-width: 360px){
+                display: none;
+            }
+            @media screen and (min-width: 768px){
+                display: flex;
+            }
         }
         .redesSociais, ul > li{
             font-weight: 600;
         }
         ul{
             line-height: 25px;
+            @media screen and (min-width: 360px){
+                display: none;
+            }
+            @media screen and (min-width: 768px){
+                display: block;
+            }
         }
+        &.flex{
+            &.center{
+                @media screen and (min-width: 360px){
+                    flex-direction: column;
+                }
+                @media screen and (min-width: 768px){
+                    flex-direction: row;
+                }
+            }
+            @media screen and (min-width: 360px){
+                width: unset;
+            }
+            @media screen and (min-width: 768px){
+                width: 500px;
+            }
+        }
+        
+    }
+    @media screen and (min-width: 360px){
+        min-height: 170px;
+        height: unset;
+    }
+    @media screen and (min-width: 768px){
+        min-height: unset;
+        height: $height;
     }
 }

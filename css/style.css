@@ -452,10 +452,30 @@ main section.contact .CoralGrosso {
   width: 190px;
   height: 190px;
 }
+@media screen and (min-width: 360px) {
+  main section.contact .CoralGrosso {
+    opacity: 0.2;
+  }
+}
+@media screen and (min-width: 468px) {
+  main section.contact .CoralGrosso {
+    opacity: 1;
+  }
+}
 main section.contact .CoralFino {
   margin-top: 325px;
   left: -18px;
   transform: rotate(10deg);
+}
+@media screen and (min-width: 360px) {
+  main section.contact .CoralFino {
+    opacity: 0.2;
+  }
+}
+@media screen and (min-width: 468px) {
+  main section.contact .CoralFino {
+    opacity: 1;
+  }
 }
 main section.contact .flex img.contactImg {
   content: url("../img/general/contact/coffe.png");
@@ -575,7 +595,7 @@ main section.aboutUs a {
   color: #E9664A;
 }
 main section.aboutUs section.informacoesGerais {
-  padding-bottom: 135px;
+  padding-bottom: 45px;
 }
 main section.aboutUs div.info .frankiNome {
   font-weight: 500;
@@ -737,6 +757,17 @@ footer .flex .logo {
 footer .flex .logo h2, footer .flex .logo h6 {
   margin: 0;
 }
+@media screen and (min-width: 360px) {
+  footer .flex .logo {
+    padding-top: 15px;
+    max-width: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .flex .logo {
+    max-width: 100%;
+  }
+}
 footer .flex .redesSociais {
   display: flex;
   flex-direction: column;
@@ -754,9 +785,61 @@ footer .flex .redesSociais h4 {
 footer .flex .redesSociais .instagram, footer .flex .redesSociais .whatsapp {
   width: 36px;
 }
+@media screen and (min-width: 360px) {
+  footer .flex .redesSociais {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .flex .redesSociais {
+    display: flex;
+  }
+}
 footer .flex .redesSociais, footer .flex ul > li {
   font-weight: 600;
 }
 footer .flex ul {
   line-height: 25px;
+}
+@media screen and (min-width: 360px) {
+  footer .flex ul {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .flex ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 360px) {
+  footer .flex.flex.center {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .flex.flex.center {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 360px) {
+  footer .flex.flex {
+    width: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .flex.flex {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 360px) {
+  footer {
+    min-height: 170px;
+    height: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    min-height: unset;
+    height: 135px;
+  }
 }
