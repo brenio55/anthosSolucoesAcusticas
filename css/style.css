@@ -62,6 +62,10 @@ body {
   position: relative;
 }
 
+#services, #contact, #aboutUs {
+  scroll-margin-top: 185px;
+}
+
 /* ///// TOP LINES ////// */
 /* ///// END LINES ////// */
 section.flex {
@@ -106,6 +110,10 @@ button.DiamondArrowWhite.contact::after {
   content: url("../img/general/buttons/diamondArrowWhite.png");
   margin-left: 43px;
 }
+button:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
 
 .redesSociais {
   display: flex;
@@ -119,6 +127,10 @@ button.DiamondArrowWhite.contact::after {
 .redesSociais .whatsapp {
   content: url("../img/general/socialMedia/whatswhite.png");
   max-width: 40px;
+}
+.redesSociais .instagram:hover, .redesSociais .whatsapp:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 img.grafismo {
@@ -258,6 +270,11 @@ header nav {
 }
 header nav ul li {
   display: inline-block;
+}
+header nav ul li:hover {
+  text-shadow: 0 0 10px #F8DAD0;
+  transform: scale(1.1);
+  transition: all 0.05s;
 }
 header.header-menor {
   min-height: 100px;
@@ -594,6 +611,11 @@ main section.contact form input, main section.contact form textarea {
   background: none;
   box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
 }
+main section.contact form input:focus, main section.contact form textarea:focus {
+  color: #F8DAD0;
+  outline: none;
+  text-indent: 4px;
+}
 main section.contact form input {
   border-top: none;
   border-right: none;
@@ -874,4 +896,26 @@ footer .flex ul {
     min-height: unset;
     height: 135px;
   }
+}
+
+/** ANIMATED LETTERS **/
+.ml7, .ml8 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+
+.ml7 .text-wrapper, .ml8 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
 }

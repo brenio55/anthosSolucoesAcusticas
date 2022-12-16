@@ -82,6 +82,10 @@ body{
     position: relative;
 }
 
+#services, #contact, #aboutUs{
+    scroll-margin-top: 185px;
+}
+
 // .linha{
 //     display: block;
 //     position: fixed;
@@ -176,6 +180,10 @@ button{
         content: url('../img/general/buttons/diamondArrowWhite.png');
         margin-left: 43px;
     }
+    &:hover{
+        transform: scale(1.03);
+        cursor: pointer;
+    }
 } 
 .redesSociais{
     $maxWidth: 40px;
@@ -190,6 +198,13 @@ button{
     .whatsapp{
         content: url('../img/general/socialMedia/whatswhite.png');
         max-width: $maxWidth;
+    }
+
+    .instagram, .whatsapp{
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
     }
 }
 
@@ -373,7 +388,9 @@ header {
             li{
                 display: inline-block;
                 &:hover{
-                    
+                    text-shadow: 0 0 10px $mainTextColor;
+                    transform: scale(1.1);
+                    transition: all 0.05s;
                 }
             }
         }
@@ -744,6 +761,12 @@ main{
                 border-radius: 3px;
                 background: none;
                 @include sombra();
+
+                &:focus{
+                    color: $mainTextColor;
+                    outline: none;
+                    text-indent: 4px;
+                }
             }
 
             input{
@@ -1025,3 +1048,23 @@ footer{
         height: $height;
     }
 }
+
+/** ANIMATED LETTERS **/
+.ml7, .ml8 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+  }
+  .ml7 .text-wrapper, .ml8 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>anthos</title>
+    <title>anthos - soluções acústicas</title>
 
     <!-- Google Fonts Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,15 @@
     <!-- Google Fonts Imports -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/general/header/logo.png" type="image/x-icon">
 
     <script
     src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
     crossorigin="anonymous"></script>
 
-    <script src="scroll.js"></script>
-    <script src="send.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/send.js"></script>
 </head>
 <body id="home"> <!-- verificar possibilidade de fazer linhas com pseudoclasse no body-->
     <!-- <span class="linha LdireitaTop"></span> -->
@@ -47,14 +48,17 @@
         <section class="front-page"> <!-- FRONT PAGE -->
             <img class="grafismo CoralFino frontPage" alt="Coral Fino Grafismo de decoração">
             <section class="flex spaceEvenly">
-                <article class="esquerdo">
-                    <h2 class="branding1">O melhor em</h2>
-                    <h1 class="branding2">SOLUÇÕES ACÚSTICAS</h1>
+                <article class="esquerdo">               
+                    
+                    <h2 class="branding1 ml7"><span class="text-wrapper"><span class="letters">O melhor em</span></span></h2>
+                    <h1 class="branding2 ml8"><span class="text-wrapper"><span class="letters">SOLUÇÕES ACÚSTICAS</span></span></h1>
 
-                    <button class="DiamondArrow">Clique para conhecer</button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+                    <a href="#services"><button class="DiamondArrow">Clique para conhecer</button></a>
                     <div class="redesSociais">
-                        <img src="" alt="logo do instagram" class="instagram">
-                        <img src="" alt="logo do whatsapp" class="whatsapp">
+                        <a href="https://www.instagram.com/anthos.condominial/" target="_blank"><img src="" alt="logo do instagram" class="instagram"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5521992215465" target="_blank"><img src="" alt="logo do whatsapp" class="whatsapp"></a>
                     </div>
                 </article>
 
@@ -131,19 +135,19 @@
                 <section class="grupo1">
                     <img src="" alt="homem mexendo em celular com um café na outra mão" class="contactImg">
                     <div class="redesSociais">
-                        <img src="" alt="logo do instagram" class="instagram">
-                        <img src="" alt="logo do whatsapp" class="whatsapp">
+                        <a href="https://www.instagram.com/anthos.condominial/" target="_blank"><img src="" alt="logo do instagram" class="instagram"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5521992215465" target="_blank"><img src="" alt="logo do whatsapp" class="whatsapp"></a>
                     </div>
                 </section>
                 <section class="grupo2">
                     <h2 class="entreEmContato">Entre em contato conosco</h2>
 
-                    <form action="javascript:msg();">
+                    <form action="javascript:enviarMensagem();">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome">
 
                         <label for="msg">Mensagem</label>
-                        <textarea name="msg" id="" cols="30" rows="18"></textarea>
+                        <textarea name="msg" id="mensagem" cols="30" rows="18"></textarea>
 
                         <button class="DiamondArrowWhite contact" type="submit">Enviar</button> <!-- imagem com pseudoclasse -->
                     </form>
@@ -217,7 +221,7 @@
                 </section>
                 <section class="flex center aboutUsParte3">
                     <img src="img/general/aboutUs/equalizador.png" alt="foto de frequências sonoras em equalizador" class="equalizadorImg">
-                    <p><a href="#">Veja aqui</a> as normas que 
+                    <p><a href="working/index.html">Veja aqui</a> as normas que 
                         utilizamos para executar nossos 
                         serviços de medição, e alguns 
                         livros estudados pela nossa 
@@ -236,9 +240,9 @@
 
             <div class="redesSociais">
                 <h4>REDES SOCIAIS DA ANTHOS</h4>
-                <section class="flex center">
-                    <img alt="logo do instagram" class="instagram">
-                    <img alt="logo do whatsapp" class="whatsapp">
+                <section class="flex center">                    
+                        <a href="https://www.instagram.com/anthos.condominial/" target="_blank"><img src="" alt="logo do instagram" class="instagram"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5521992215465" target="_blank"><img src="" alt="logo do whatsapp" class="whatsapp"></a>                    
                 </section>
             </div>
 
@@ -255,3 +259,5 @@
     <!-- <p class="webDesigner">Desenvolvido por Brenio Filho</p> -->
 </body>
 </html>
+<script src="js/animate.js"></script>
+<script src="js/sendMessage.js"></script>
