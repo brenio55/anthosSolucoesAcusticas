@@ -1068,3 +1068,100 @@ footer{
     display: inline-block;
     line-height: 1em;
   }
+
+/****************** internos serviços****************/
+/****** GENERAL STYLES **********/
+div.espacoPadrao{
+    margin: 0;
+    margin-top: 254px;
+}
+
+section.servicesInside{
+    min-height: 475px;
+    padding-top: 65px;
+
+    section.flex.center{
+        gap: 20px;
+    }
+    article.flex, div.flex{
+        display: flex;
+        &.center{
+            justify-content: center;
+        }
+        &.spaceBetween{
+            justify-content: space-between;
+        }
+        &.spaceEvenly{
+            justify-content: space-evenly;
+        }
+    }
+
+    .esquerdo, .direito{
+        width: 500px;
+    }
+    .esquerdo{
+        #fotoServico1,
+        #fotoServico2,
+        #fotoServico3,
+        #fotoServico4{
+            display: block;
+            background-color: green;
+            width: 150px;
+            height: 85px;
+        }
+
+        #fotoServico2,
+        #fotoServico3,
+        #fotoServico4{
+            display: inline-block;
+        }
+
+        #fotoServico1{
+            width: 500px;
+            margin-bottom: 25px;
+            height: 300px;
+        }
+    }
+    .direito{
+        button{
+            color: $mainTextColor;
+            margin: 0;
+            min-width: 205px;
+            background-color: $mainColorBrighter;
+        }
+
+        form input, button{
+            display: inline;
+        }
+
+        form input{
+            border: 1px solid white;
+            border-radius: 3px;
+            background: none;
+
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            box-shadow: rgb(0,0,0, 0.09) 0px 2px;
+
+            @include sombra();
+
+            &:focus{
+                color: $mainTextColor;
+                outline: none;
+                text-indent: 4px;
+            }
+        }
+
+        h2{
+            margin-top: 0;
+            font-size: 46px;
+        }
+        .quadradoServicosInside{
+            margin-bottom: 90px;
+        }
+    }
+}
+
+/********************* PROJETO **********************/
+   

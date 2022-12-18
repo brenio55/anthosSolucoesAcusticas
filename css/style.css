@@ -919,3 +919,85 @@ footer .flex ul {
   display: inline-block;
   line-height: 1em;
 }
+
+/****************** internos serviços****************/
+/****** GENERAL STYLES **********/
+div.espacoPadrao {
+  margin: 0;
+  margin-top: 254px;
+}
+
+section.servicesInside {
+  min-height: 475px;
+  padding-top: 65px;
+}
+section.servicesInside section.flex.center {
+  gap: 20px;
+}
+section.servicesInside article.flex, section.servicesInside div.flex {
+  display: flex;
+}
+section.servicesInside article.flex.center, section.servicesInside div.flex.center {
+  justify-content: center;
+}
+section.servicesInside article.flex.spaceBetween, section.servicesInside div.flex.spaceBetween {
+  justify-content: space-between;
+}
+section.servicesInside article.flex.spaceEvenly, section.servicesInside div.flex.spaceEvenly {
+  justify-content: space-evenly;
+}
+section.servicesInside .esquerdo, section.servicesInside .direito {
+  width: 500px;
+}
+section.servicesInside .esquerdo #fotoServico1,
+section.servicesInside .esquerdo #fotoServico2,
+section.servicesInside .esquerdo #fotoServico3,
+section.servicesInside .esquerdo #fotoServico4 {
+  display: block;
+  background-color: green;
+  width: 150px;
+  height: 85px;
+}
+section.servicesInside .esquerdo #fotoServico2,
+section.servicesInside .esquerdo #fotoServico3,
+section.servicesInside .esquerdo #fotoServico4 {
+  display: inline-block;
+}
+section.servicesInside .esquerdo #fotoServico1 {
+  width: 500px;
+  margin-bottom: 25px;
+  height: 300px;
+}
+section.servicesInside .direito button {
+  color: #F8DAD0;
+  margin: 0;
+  min-width: 205px;
+  background-color: #164850;
+}
+section.servicesInside .direito form input, section.servicesInside .direito button {
+  display: inline;
+}
+section.servicesInside .direito form input {
+  border: 1px solid white;
+  border-radius: 3px;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
+}
+section.servicesInside .direito form input:focus {
+  color: #F8DAD0;
+  outline: none;
+  text-indent: 4px;
+}
+section.servicesInside .direito h2 {
+  margin-top: 0;
+  font-size: 46px;
+}
+section.servicesInside .direito .quadradoServicosInside {
+  margin-bottom: 90px;
+}
+
+/********************* PROJETO **********************/
