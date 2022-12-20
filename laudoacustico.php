@@ -24,7 +24,10 @@
                     <div class="quadradoServicosInside">
                         <h2>Laudo Acústico</h2>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum, temporibus quos ipsa facere ratione quis? Commodi, itaque quas assumenda deleniti iste laboriosam hic vero facilis aperiam placeat. Mollitia, esse!</p>
+                        <p>É feito um laudo para atestação de um trabalho de 
+                            solução acústica em local determinado pelo cliente. É feito o uso de equipamentos acústicos de medição e 
+                            precisão, com base nas normas internacionais e 
+                            nacionais.</p>
 
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus? Dolore cumque earum, iusto fuga velit debitis natus quis quibusdam nesciunt necessitatibus adipisci quidem voluptatem soluta neque tenetur atque nemo.</p>
                     </div>

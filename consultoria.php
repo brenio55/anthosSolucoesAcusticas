@@ -24,9 +24,13 @@
                     <div class="quadradoServicosInside">
                         <h2>Consultoria</h2>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum, temporibus quos ipsa facere ratione quis? Commodi, itaque quas assumenda deleniti iste laboriosam hic vero facilis aperiam placeat. Mollitia, esse!</p>
+                        <p>O cliente envia fotos do local e/ou caracteristicas 
+                            para o arquiteto. É feita uma análise técnica, onde o 
+                            arquiteto irá indicar o que se deve ser feito (por 
+                            escrito) para que se tenhao resultado desejado pelo 
+                            cliente. Este serviço não inclui um projeto.</p>
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus? Dolore cumque earum, iusto fuga velit debitis natus quis quibusdam nesciunt necessitatibus adipisci quidem voluptatem soluta neque tenetur atque nemo.</p>
+                        <p>Deixe seu nome e pressione o botão abaixo que você será encaminhado com uma mensagem personalizada sobre este serviço para o nosso Whatsapp.</p>
                     </div>
                     
                         <form action="javascript:enviarMensagem();">

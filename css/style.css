@@ -931,6 +931,9 @@ section.servicesInside {
   min-height: 475px;
   padding-top: 65px;
 }
+section.servicesInside p {
+  letter-spacing: 2px;
+}
 section.servicesInside section.flex.center {
   gap: 20px;
 }

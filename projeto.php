@@ -24,9 +24,9 @@
                     <div class="quadradoServicosInside">
                         <h2>Projeto Acústico</h2>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum, temporibus quos ipsa facere ratione quis? Commodi, itaque quas assumenda deleniti iste laboriosam hic vero facilis aperiam placeat. Mollitia, esse!</p>
+                        <p>Anamnese, com visita presencial ao local. Medição com aparelhos especificos, de acordo com as normas nacionais e internacionais existentes. É então entregue um projeto arquitetônico de acordo com os melhores conceitos e práticas acústicas.</p>
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus? Dolore cumque earum, iusto fuga velit debitis natus quis quibusdam nesciunt necessitatibus adipisci quidem voluptatem soluta neque tenetur atque nemo.</p>
+                        <p>Deixe seu nome e pressione o botão abaixo que você será encaminhado com uma mensagem personalizada sobre este serviço para o nosso Whatsapp.</p>
                     </div>
                     
                         <form action="javascript:enviarMensagem();">

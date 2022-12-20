@@ -1080,6 +1080,10 @@ section.servicesInside{
     min-height: 475px;
     padding-top: 65px;
 
+    p{
+        letter-spacing: 2px;
+    }
+
     section.flex.center{
         gap: 20px;
     }
@@ -1115,6 +1119,7 @@ section.servicesInside{
         #fotoServico4{
             display: inline-block;
         }
+        
 
         #fotoServico1{
             width: 500px;
