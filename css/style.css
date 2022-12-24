@@ -934,8 +934,28 @@ section.servicesInside {
 section.servicesInside p {
   letter-spacing: 2px;
 }
+section.servicesInside img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 section.servicesInside section.flex.center {
-  gap: 20px;
+  gap: 40px;
+}
+@media screen and (min-width: 360px) {
+  section.servicesInside section.flex.center {
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1100px) {
+  section.servicesInside section.flex.center {
+    flex-direction: row;
+  }
 }
 section.servicesInside article.flex, section.servicesInside div.flex {
   display: flex;
@@ -949,8 +969,38 @@ section.servicesInside article.flex.spaceBetween, section.servicesInside div.fle
 section.servicesInside article.flex.spaceEvenly, section.servicesInside div.flex.spaceEvenly {
   justify-content: space-evenly;
 }
+@media screen and (min-width: 360px) {
+  section.servicesInside article.flex, section.servicesInside div.flex {
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto 70px auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1100px) {
+  section.servicesInside article.flex, section.servicesInside div.flex {
+    justify-content: space-between;
+  }
+}
+section.servicesInside .laudo.direito > img {
+  -o-object-position: 0 -90px;
+     object-position: 0 -90px;
+}
 section.servicesInside .esquerdo, section.servicesInside .direito {
   width: 500px;
+}
+@media screen and (min-width: 360px) {
+  section.servicesInside .esquerdo, section.servicesInside .direito {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  section.servicesInside .esquerdo, section.servicesInside .direito {
+    width: 500px;
+  }
 }
 section.servicesInside .esquerdo #fotoServico1,
 section.servicesInside .esquerdo #fotoServico2,
@@ -960,6 +1010,9 @@ section.servicesInside .esquerdo #fotoServico4 {
   background-color: green;
   width: 150px;
   height: 85px;
+  box-shadow: rgba(0, 0, 0, 0.09) 3px 4px;
+  border-radius: 2px;
+  border: 1px rgb(141, 56, 40) solid;
 }
 section.servicesInside .esquerdo #fotoServico2,
 section.servicesInside .esquerdo #fotoServico3,
@@ -971,11 +1024,26 @@ section.servicesInside .esquerdo #fotoServico1 {
   margin-bottom: 25px;
   height: 300px;
 }
+section.servicesInside .esquerdo #fotoServico1.consultoria, section.servicesInside .esquerdo #fotoServico1.assessoria {
+  height: 404px;
+}
 section.servicesInside .direito button {
   color: #F8DAD0;
   margin: 0;
   min-width: 205px;
   background-color: #164850;
+}
+@media screen and (min-width: 360px) {
+  section.servicesInside .direito form div {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  section.servicesInside .direito form div {
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 section.servicesInside .direito form input, section.servicesInside .direito button {
   display: inline;

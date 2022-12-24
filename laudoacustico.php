@@ -1,3 +1,22 @@
+<?php
+
+    $caminhoServices = "img/general/services/";
+    $pagina = "laudo/inside/";
+
+    $img = [
+        $caminhoServices.$pagina."laudo1.jpg",
+        $caminhoServices.$pagina."laudo2.jpg",
+        $caminhoServices.$pagina."laudo3.jpg",
+        $caminhoServices.$pagina."laudo4.jpg"
+    ];
+
+    $javascriptMsg = "javascript:enviarMensagemServices('Laudo Acústico');";
+
+$pContent = "Para um orçamento, deixe seu nome e pressione o botão abaixo que você será encaminhado com uma mensagem personalizada sobre este serviço para o nosso Whatsapp!";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +26,15 @@
 <body>
     <?php require("header.php"); ?>
     <div class="espacoPadrao"></div>
-    <section class="servicesInside">
+    <section class="servicesInside laudo">
         <section class="flex center">
             <section class="esquerdo">
                 <article>
-                    <img src="" alt="foto do serviço" id="fotoServico1">
+                    <img src="<?=$img[0]?>" alt="foto do serviço" id="fotoServico1">
                     <article class="flex spaceBetween">
-                        <img src="" alt="foto do Serviço 2" id="fotoServico2">
-                        <img src="" alt="foto do Serviço 3" id="fotoServico3">
-                        <img src="" alt="foto do Serviço 4" id="fotoServico4">
+                        <img src="<?=$img[1]?>" alt="foto do Serviço 2" id="fotoServico2">
+                        <img src="<?=$img[2]?>" alt="foto do Serviço 3" id="fotoServico3">
+                        <img src="<?=$img[3]?>" alt="foto do Serviço 4" id="fotoServico4">
                     </article>
                 </article>
             </section>
@@ -29,10 +48,10 @@
                             precisão, com base nas normas internacionais e 
                             nacionais.</p>
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus? Dolore cumque earum, iusto fuga velit debitis natus quis quibusdam nesciunt necessitatibus adipisci quidem voluptatem soluta neque tenetur atque nemo.</p>
+                            <p><?=$pContent?></p>
                     </div>
                     
-                        <form action="javascript:enviarMensagem();">
+                        <form action="<?=$javascriptMsg?>">
                             <div class="flex spaceBetween">
                               <div>
                                 <label for="nome">Nome</label>

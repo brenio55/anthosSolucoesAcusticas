@@ -1084,8 +1084,22 @@ section.servicesInside{
         letter-spacing: 2px;
     }
 
+    img{
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
     section.flex.center{
-        gap: 20px;
+        gap: 40px;
+
+        @media screen and (min-width: 360px){
+            flex-direction: column;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1100px){
+            flex-direction: row;
+        }
     }
     article.flex, div.flex{
         display: flex;
@@ -1098,10 +1112,34 @@ section.servicesInside{
         &.spaceEvenly{
             justify-content: space-evenly;
         }
+
+        @media screen and (min-width: 360px){
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+            margin: 0 auto 70px auto;
+            width: fit-content;
+        }
+        @media screen and (min-width: 1100px){
+            justify-content: space-between;
+        }
+    }
+
+    .laudo.direito{
+        & > img {
+            object-position: 0 -90px;
+        }
     }
 
     .esquerdo, .direito{
         width: 500px;
+
+        @media screen and (min-width: 360px){
+            width: 350px;
+        }
+        @media screen and (min-width: 1100px){
+            width: 500px;
+        }
     }
     .esquerdo{
         #fotoServico1,
@@ -1112,6 +1150,9 @@ section.servicesInside{
             background-color: green;
             width: 150px;
             height: 85px;
+            @include sombra();
+            border-radius: 2px;
+            border: 1px rgb(141 56 40) solid;
         }
 
         #fotoServico2,
@@ -1125,6 +1166,10 @@ section.servicesInside{
             width: 500px;
             margin-bottom: 25px;
             height: 300px;
+
+            &.consultoria, &.assessoria{
+                height: 404px;
+            }
         }
     }
     .direito{
@@ -1133,6 +1178,17 @@ section.servicesInside{
             margin: 0;
             min-width: 205px;
             background-color: $mainColorBrighter;
+        }
+
+        form div{
+            @media screen and (min-width: 360px){
+                flex-direction: column;
+                gap: 30px;
+            }
+            @media screen and (min-width: 1100px){
+                flex-direction: row;
+                gap: 15px;
+            }
         }
 
         form input, button{

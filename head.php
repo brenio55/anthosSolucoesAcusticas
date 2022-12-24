@@ -33,4 +33,4 @@
     crossorigin="anonymous"></script>
 
     <script src="js/scroll.js"></script>
-    <script src="js/send.js"></script>
+    <script src="js/sendMessage.js"></script>
