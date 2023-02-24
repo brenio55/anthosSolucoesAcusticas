@@ -210,7 +210,7 @@ div.secName h2 {
   margin-bottom: 0;
 }
 div.secName .secSymbol {
-  content: url("../img/general/grafismos/coralPequeno.png");
+  content: url("../img/general/grafismos/coralPequeno.webp");
   width: 51px;
   height: 51px;
 }
@@ -218,7 +218,7 @@ div.secName .secSymbol.escuro {
   content: url("../img/general/grafismos/coralPequenoPreto.png");
 }
 div.secName .secSymbol.verde {
-  content: url("../img/general/grafismos/coralPequenoVerdeInverso.png");
+  content: url("../img/general/grafismos/coralPequenoVerdeInverso.webp");
 }
 div.secName .secSymbol.aboutUs {
   content: url("../img/general/aboutUs/grafismoContato.png");
@@ -299,7 +299,7 @@ main section.front-page { /******************************************** FRONT - 
   font-family: "Alegreya Sans", sans-serif;
   margin-top: 0;
   background-color: #ed6e64;
-  background-image: url("../img/general/frontPage/Pattern.png");
+  background-image: url("../img/general/frontPage/Pattern.webp");
   background-size: 100%;
   min-height: 636px;
 }
@@ -362,7 +362,7 @@ main section.front-page .esquerdo button {
   }
 }
 main section.front-page .direito .bannerImage {
-  content: url("../img/general/frontPage/studio.jpg");
+  content: url("../img/general/frontPage/studio.webp");
   max-width: 633px;
   border-radius: 19px;
   margin-right: 34px;
@@ -395,16 +395,16 @@ main section.services .quadrado img {
   border-top-right-radius: 7.64px;
 }
 main section.services .quadrado img.projetoImg {
-  content: url("../img/general/services/projeto/projeto.jpg");
+  content: url("../img/general/services/projeto/projeto.webp");
 }
 main section.services .quadrado img.consultoriaImg {
-  content: url("../img/general/services/consultoria/consultoria.jpg");
+  content: url("../img/general/services/consultoria/consultoria.webp");
 }
 main section.services .quadrado img.assessoriaImg {
-  content: url("../img/general/services/assessoria/assessoriaProportional.png");
+  content: url("../img/general/services/assessoria/assessoriaProportional.webp");
 }
 main section.services .quadrado img.laudoAcusticoImg {
-  content: url("../img/general/services/laudo/laudo.jpg");
+  content: url("../img/general/services/laudo/laudo.webp");
 }
 main section.services .quadrado h3, main section.services .quadrado h4, main section.services .quadrado button {
   color: #F8DAD0;
@@ -528,7 +528,7 @@ main section.contact .CoralFino {
   }
 }
 main section.contact .flex img.contactImg {
-  content: url("../img/general/contact/coffe.png");
+  content: url("../img/general/contact/coffe.webp");
   max-width: 410px;
   max-height: 415px;
   border-radius: 20px;
@@ -641,7 +641,7 @@ main section.aboutUs::before {
   content: "";
   width: 100%;
   height: 1710px;
-  background-image: url("../img/general/aboutUs/pattern.png");
+  background-image: url("../img/general/aboutUs/pattern.webp");
   position: absolute;
   background-size: 70%;
   pointer-events: none;
@@ -947,7 +947,6 @@ section.servicesInside section.flex.center {
 @media screen and (min-width: 360px) {
   section.servicesInside section.flex.center {
     flex-direction: column;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
@@ -976,7 +975,6 @@ section.servicesInside article.flex.spaceEvenly, section.servicesInside div.flex
     flex-direction: row;
     gap: 10px;
     margin: 0 auto 70px auto;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }

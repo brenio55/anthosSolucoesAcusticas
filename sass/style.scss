@@ -293,7 +293,7 @@ div.secName{
 
     & .secSymbol{
         $widthHeight: 51px;
-        content: url('../img/general/grafismos/coralPequeno.png');
+        content: url('../img/general/grafismos/coralPequeno.webp');
         width: $widthHeight;
         height: $widthHeight;
 
@@ -301,7 +301,7 @@ div.secName{
             content: url('../img/general/grafismos/coralPequenoPreto.png');
         }
         &.verde{
-            content: url('../img/general/grafismos/coralPequenoVerdeInverso.png');
+            content: url('../img/general/grafismos/coralPequenoVerdeInverso.webp');
         }
 
         &.aboutUs{
@@ -423,7 +423,7 @@ main{
         font-family: 'Alegreya Sans', sans-serif;
         margin-top: 0;
         background-color: $rosa;
-        background-image: url('../img/general/frontPage/Pattern.png');
+        background-image: url('../img/general/frontPage/Pattern.webp');
         background-size: 100%;
 
         $min-height: 636px;
@@ -492,7 +492,7 @@ main{
         }
         .direito{
             .bannerImage{
-                content: url('../img/general/frontPage/studio.jpg');
+                content: url('../img/general/frontPage/studio.webp');
                 max-width: 633px;
                 border-radius: 19px;
                 margin-right: 34px;
@@ -525,20 +525,20 @@ main{
                 border-top-right-radius: $border-radius;
 
                 &.projetoImg{
-                    content: url('../img/general/services/projeto/projeto.jpg');
+                    content: url('../img/general/services/projeto/projeto.webp');
                 }
                 &.consultoriaImg{
-                    content: url('../img/general/services/consultoria/consultoria.jpg');
+                    content: url('../img/general/services/consultoria/consultoria.webp');
                 }
                 &.assessoriaImg{
                     // background-image: url('../img/general/services/assessoria/assessoria.jpg');
                     // background-size: 90%;
                     // background-position: center;
                     // background-blend-mode: multiply;
-                    content: url('../img/general/services/assessoria/assessoriaProportional.png');
+                    content: url('../img/general/services/assessoria/assessoriaProportional.webp');
                 }
                 &.laudoAcusticoImg{
-                    content: url('../img/general/services/laudo/laudo.jpg');
+                    content: url('../img/general/services/laudo/laudo.webp');
                 }
             }
 
@@ -679,7 +679,7 @@ main{
             
 
             img.contactImg{
-                content: url('../img/general/contact/coffe.png');
+                content: url('../img/general/contact/coffe.webp');
                 max-width: 410px;
                 max-height: 415px;
                 border-radius: 20px;
@@ -799,7 +799,7 @@ main{
             content: '';
             width: 100%;
             height: 1710px;
-            background-image: url('../img/general/aboutUs/pattern.png');
+            background-image: url('../img/general/aboutUs/pattern.webp');
             position: absolute;
             background-size: 70%;
             pointer-events: none;
