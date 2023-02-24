@@ -30,11 +30,11 @@ $pContent = "Para um orçamento, deixe seu nome e pressione o botão abaixo que 
         <section class="flex center">
             <section class="esquerdo">
                 <article>
-                    <img src="<?=$img[0]?>" alt="foto do serviço" id="fotoServico1">
+                    <img src="<?=$img[0]?>" alt="foto do serviço" id="fotoServico1" class="laudoacustico">
                     <article class="flex spaceBetween">
-                        <img src="<?=$img[1]?>" alt="foto do Serviço 2" id="fotoServico2">
-                        <img src="<?=$img[2]?>" alt="foto do Serviço 3" id="fotoServico3">
-                        <img src="<?=$img[3]?>" alt="foto do Serviço 4" id="fotoServico4">
+                        <img src="<?=$img[1]?>" alt="foto do Serviço 2" id="fotoServico2" class="laudoacustico">
+                        <img src="<?=$img[2]?>" alt="foto do Serviço 3" id="fotoServico3" class="laudoacustico">
+                        <img src="<?=$img[3]?>" alt="foto do Serviço 4" id="fotoServico4" class="laudoacustico">
                     </article>
                 </article>
             </section>

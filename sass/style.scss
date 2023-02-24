@@ -417,6 +417,7 @@ header {
 }
 
 main{
+    overflow: hidden;
     padding-top: $heightHeader;
     section.front-page{ /******************************************** FRONT - PAGE /********************************************/
         font-family: 'Alegreya Sans', sans-serif;
@@ -1159,6 +1160,10 @@ section.servicesInside{
         #fotoServico3,
         #fotoServico4{
             display: inline-block;
+
+            &.laudoacustico{
+                object-position: center;
+            }
         }
         
 
@@ -1169,6 +1174,9 @@ section.servicesInside{
 
             &.consultoria, &.assessoria{
                 height: 404px;
+            }
+            &.laudoacustico{
+                object-position: top;
             }
         }
     }

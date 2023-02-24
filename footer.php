@@ -15,10 +15,10 @@
             </div>
 
             <ul>
-                <li><a href="<?= ROOTPATH.DIRECTORY_SEPARATOR?>#home">HOME</a></li>
-                <li><a href="<?= ROOTPATH.DIRECTORY_SEPARATOR?>#services">SERVIÇOS</a></li>
-                <li><a href="<?= ROOTPATH.DIRECTORY_SEPARATOR?>#contact">CONTATO</a></li>
-                <li><a href="<?= ROOTPATH.DIRECTORY_SEPARATOR?>#aboutUs">SOBRE</a></li>
+                <li><a href="https://anthosacustica.com.br/#home">HOME</a></li>
+                <li><a href="https://anthosacustica.com.br/#services">SERVIÇOS</a></li>
+                <li><a href="https://anthosacustica.com.br/#contact">CONTATO</a></li>
+                <li><a href="https://anthosacustica.com.br/#aboutUs">SOBRE</a></li>
             </ul>
         </section>
         <!-- <span class="linha LesquerdaBot"></span> -->

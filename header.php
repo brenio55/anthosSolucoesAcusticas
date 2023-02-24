@@ -22,10 +22,10 @@ define("ROOTPATH", $protocol.dirname($_SERVER["SCRIPT_FILENAME"]));
         </div>
         <nav>
             <ul>
-                <li><a href="<?= ROOTPATH?>#home">HOME</a></li>
-                <li><a href="<?= ROOTPATH?>#services">SERVIÇOS</a></li>
-                <li><a href="<?= ROOTPATH?>#contact">CONTATO</a></li>
-                <li><a href="<?= ROOTPATH?>#aboutUs">SOBRE</a></li>
+                <li><a href="https://anthosacustica.com.br/#home">HOME</a></li>
+                <li><a href="https://anthosacustica.com.br/#services">SERVIÇOS</a></li>
+                <li><a href="https://anthosacustica.com.br/#contact">CONTATO</a></li>
+                <li><a href="https://anthosacustica.com.br/#aboutUs">SOBRE</a></li>
             </ul>
         </nav>
     </header> <!-- fazer linhas esquerda e direta com pseudoclasse-->

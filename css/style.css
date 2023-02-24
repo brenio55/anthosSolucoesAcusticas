@@ -292,6 +292,7 @@ header.header-menor nav {
 }
 
 main {
+  overflow: hidden;
   padding-top: 180px;
 }
 main section.front-page { /******************************************** FRONT - PAGE /********************************************/
@@ -1019,6 +1020,12 @@ section.servicesInside .esquerdo #fotoServico3,
 section.servicesInside .esquerdo #fotoServico4 {
   display: inline-block;
 }
+section.servicesInside .esquerdo #fotoServico2.laudoacustico,
+section.servicesInside .esquerdo #fotoServico3.laudoacustico,
+section.servicesInside .esquerdo #fotoServico4.laudoacustico {
+  -o-object-position: center;
+     object-position: center;
+}
 section.servicesInside .esquerdo #fotoServico1 {
   width: 500px;
   margin-bottom: 25px;
@@ -1026,6 +1033,10 @@ section.servicesInside .esquerdo #fotoServico1 {
 }
 section.servicesInside .esquerdo #fotoServico1.consultoria, section.servicesInside .esquerdo #fotoServico1.assessoria {
   height: 404px;
+}
+section.servicesInside .esquerdo #fotoServico1.laudoacustico {
+  -o-object-position: top;
+     object-position: top;
 }
 section.servicesInside .direito button {
   color: #F8DAD0;
