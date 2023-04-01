@@ -1021,6 +1021,12 @@ footer{
             @media screen and (min-width: 768px){
                 display: block;
             }
+            li:hover{
+                text-shadow: 0 0 10px $mainTextColor;
+                transform: scale(1.1);
+                transition: all 0.03s;
+            }
+            
         }
         &.flex{
             &.center{
@@ -1075,6 +1081,65 @@ footer{
 div.espacoPadrao{
     margin: 0;
     margin-top: 254px;
+}
+
+section.normas{
+    min-height: 475px;
+    background: rgb(30, 30, 30);
+    background-image: url("../img/general/frontPage/Pattern.webp");
+    background-size: 100%;
+
+    h1{
+        text-align: center;
+        font-family: 'Alegreya Sans';
+        font-weight: 600;
+        padding-top: 22px;
+        font-size: 32px;
+        margin-bottom: 2px;
+    }
+
+    li.normaTitle{
+        font-weight: 500;
+    }
+
+    ol li{
+        list-style: unset;
+    }
+
+    ol{
+        margin-top: 5px;
+    }
+
+    .TitleLivros{
+        display: inline-block;
+        font-family: 'Alegreya Sans';
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-left: -15px;
+    }
+
+    ul li:not(li.normaDesc){
+        list-style: unset;
+        font-family: 'Alegreya Sans';
+        font-weight: 600;
+    }
+
+    ul li.normaDesc{
+        padding-left: 50px;
+    }
+
+    div.flex{
+        display: flex;
+
+        &.spaceBetween{
+            justify-content: space-between;
+        }
+    }
+
+    div.livrosDasNormas{
+        display: flex;
+        align-items: center;
+    }
 }
 
 section.servicesInside{
